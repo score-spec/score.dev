@@ -1,0 +1,11 @@
+baseURL: "http://localhost:1313/"
+languageCode: en-us
+title: Title
+theme: hugo-tailwind
+paginate: "10"
+summaryLength: "10"
+googleAnalytics: ""
+outputs:
+  home:
+    - HTML
+    - RSS

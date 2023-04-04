@@ -1,23 +1,6 @@
 <head>
-  <meta charset="utf-8" />
-  <title>
-    {{ .Site.Title }}
-    {{ with .Title }}- {{ . }}{{ end }}
-  </title>
-  <meta
-    name="description"
-    content="{{ with .Description }}
-      {{ . }}
-    {{ else }}
-      {{ with .Site.Params.description }}{{ . }}{{ end }}
-    {{ end }}"
-  />
-  {{ with .Params.image }}
-    <meta property="og:image" content="{{ . | absURL }}" />
-  {{ end }}
-  {{ template "_internal/opengraph.html" . }}
+  {{ partial "meta/tags.html" . }}
+  {{ partial "meta/opengraph.html" . }}
   {{ template "_internal/google_analytics_async.html" . }}
-  {{ .Site.Params.custom_script | safeHTML }}
-
   {{ partialCached "style.html" . }}
 </head>

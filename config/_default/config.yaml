@@ -4,8 +4,18 @@ title: Title
 theme: hugo-tailwind
 paginate: "10"
 summaryLength: "10"
-googleAnalytics: ""
 outputs:
   home:
     - HTML
     - RSS
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+params:
+  plugins:
+    js:
+      - link: plugins/jquery/jquery.min.js
+        attributes: ""
+      - link: plugins/lunr/lunr.min.js
+        attributes: ""

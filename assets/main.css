@@ -16,6 +16,35 @@
   .bg-gradient {
     @apply bg-gradient-to-r from-primary to-orange;
   }
+
+  h1 {
+    @apply text-[36px] leading-[44px] lg:text-[56px] lg:leading-[62px] lg:font-medium 
+    text-dark font-grostesk;
+  }
+
+  h2 {
+    @apply text-[24px] leading-[30px] lg:text-[42px] lg:leading-[44px] lg:font-medium 
+    text-dark font-grostesk;
+  }
+
+  h3 {
+    @apply text-[18px] leading-[24px] lg:text-[32px] lg:leading-[36px] lg:font-medium 
+    text-dark font-grostesk;
+  }
+
+  h4 {
+    @apply text-[16px] leading-[20px] lg:text-[18px] lg:leading-[22px] lg:font-bold 
+    text-dark font-grostesk;
+  }
+
+  p {
+    @apply text-[16px] leading-[24px] text-dark font-graphik;
+  }
+
+  code,
+  .code {
+    @apply text-[16px] leading-[28px] text-dark font-ibm-plex-mono;
+  }
 }
 
 @font-face {

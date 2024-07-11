@@ -1,0 +1,12 @@
+<!-- JS Plugins -->
+{{ range site.Params.plugins.js }}
+  <script src="{{ .link | absURL }}" {{ .attributes | safeHTMLAttr }}></script>
+{{ end }}
+
+<!-- Main Script -->
+{{ $script := resources.Get "js/main.js" | minify | fingerprint "sha512"}}
+<script 
+  src="{{ $script.Permalink }}" 
+  integrity="{{ $script.Data.Integrity }}" 
+  crossorigin="anonymous"
+></script>

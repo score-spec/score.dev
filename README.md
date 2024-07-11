@@ -1,19 +1,36 @@
-# Erio Software - Hugo Starter
+# Score
 
-This is a starter template for Hugo static site generator using Tailwind CSS for styling and some basic configuration.
+## Requirements
 
-## Installation
+- [Git](https://git-scm.com/) — latest source release
+- [Node.js](https://nodejs.org/) — latest LTS version or newer
 
-1. Install Hugo from https://gohugo.io/installation/.
-2. Clone this repository.
-3. Install Tailwind CSS by running `npm install` in the themes/hugo-tailwind directory.
+### 1. Get started
 
-## Set up
+Download the repo.
 
-1. Change the site title in `config/_default/config.yaml`.
-2. Change the theme name in `config/_default/config.yaml` and rename the folder inside themes to match that name.
+```bash
+git clone https://github.com/humanitec/developers-docs.git
+```
 
-## Usage
+### 2. Install dependencies
 
-1. Run `hugo server` to start the development server or run `hugo` to build the site.
-2. Navigate to themes/{theme_name} and run `npm run watch` to build the CSS in watch mode.
+```bash
+npm install
+```
+
+### 4. Start development server
+
+```bash
+npm run stage
+```
+
+While the running server blocks your terminal, it is recommended to use it like that to see live log output. Just open another terminal to continue.
+
+Check the line saying `Web Server is available at //localhost:1313/ (bind address 127.0.0.1)` to find the URL to access the site on your system, hosted by your local server.
+
+The server will observe the local file system and dynamically rebuild the site on any changes.
+
+## Documentation
+
+- [Hugo](https://gohugo.io/documentation/)

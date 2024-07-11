@@ -1,0 +1,42 @@
+{
+  "name": "scoredev",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=16.16.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "init": "shx rm -rf .git && git init -b main",
+    "create": "exec-bin node_modules/.bin/hugo/hugo new",
+    "prestart": "npm run clean",
+    "start": "concurrently \"exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender\" \"npm run tw:watch\"",
+    "prebuild": "npm run clean",
+    "build": "npm run tw:build && exec-bin node_modules/.bin/hugo/hugo --gc --minify",
+    "build:preview": "npm run tw:build && exec-bin node_modules/.bin/hugo/hugo --gc --minify -D -F",
+    "clean": "shx rm -rf public resources",
+    "clean:install": "shx rm -rf package-lock.json node_modules ",
+    "server": "concurrently \"exec-bin node_modules/.bin/hugo/hugo server\" \"npm run tw:watch\"",
+    "stage": "concurrently \"exec-bin node_modules/.bin/hugo/hugo --environment staging server -b http://localhost\" \"npm run tw:watch\"",
+    "tw:build": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css",
+    "tw:watch": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css --watch",
+    "precheck": "npm version",
+    "check": "exec-bin node_modules/.bin/hugo/hugo version",
+    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "auto-changelog": "^2.4",
+    "concurrently": "^8.2.2",
+    "exec-bin": "^1.0.0",
+    "hugo-installer": ">=4.0.1",
+    "shx": "^0.3.4",
+    "tailwindcss": "^3.2.4"
+  },
+  "otherDependencies": {
+    "hugo": "0.125.4"
+  },
+  "description": ""
+}

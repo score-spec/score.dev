@@ -1,0 +1,53 @@
+# Meta Data for SEO
+
+## Homepage
+title = "[Staging] Score"
+titleSeparator = "|"
+description = "Score is a developer-centric and platform-agnostic workload specification. It ensures consistent configurations between local and remote environments."
+baseURL = "https://score.dev/"
+
+## Open Graph
+images = ["images/score-one-spec.png"]
+ogLocale = "en_US"
+domainTLD = "score.dev"
+titleHome = "Score"
+
+## Twitter Cards
+twitterSite = "@score_dev"
+twitterCreator = "@score_dev"
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "Score"
+schemaAuthor = "Score"
+schemaAuthorTwitter = "https://twitter.com/score_dev"
+schemaAuthorLinkedIn = "https://www.linkedin.com/company/score_dev"
+schemaAuthorGitHub = "https://github.com/score-spec"
+schemaLocale = "en-US"
+schemaLogo = "images/score-one-spec.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "images/score-one-spec.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaTwitter = "https://twitter.com/score_dev"
+schemaLinkedIn = "https://www.linkedin.com/company/score_dev"
+schemaGitHub = "https://github.com/score-spec"
+schemaSection = "blog"
+
+# Images
+favicon = "images/favicon.png"
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+smallLimit = "300"
+
+### Image template
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1270x740 Center" # normalize image size
+
+# Google Tag Manager
+googleTagManagerId = ""

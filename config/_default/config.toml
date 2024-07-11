@@ -1,0 +1,69 @@
+baseurl = "/"
+title = "Score"
+canonifyURLs = false
+disableAliases = false
+disableHugoGeneratorInject = true
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+paginate = 7
+rssLimit = 10
+timeout = "60s"
+
+# add redirects/headers
+[outputs]
+home = ["HTML", "RSS"]
+section = ["HTML", "RSS"]
+
+# remove .{ext} from text/netlify
+[mediaTypes."text/netlify"]
+suffixes = [""]
+delimiter = ""
+
+
+[caches]
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = "10s"
+
+[sitemap]
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5
+
+[taxonomies]
+contributor = "contributors"
+category = "categories"
+tag = "tags"
+
+[minify.tdewolff.html]
+keepWhitespace = false
+
+[related]
+threshold = 80
+includeNewer = true
+toLower = false
+[[related.indices]]
+name = "categories"
+weight = 100
+[[related.indices]]
+name = "tags"
+weight = 80
+[[related.indices]]
+name = "date"
+weight = 10
+
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.80.0"
+max = ""
+
+[Params]
+[Params.plugins]
+[[Params.plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+attributes = ""
+[[Params.plugins.js]]
+link = "plugins/lunr/lunr.min.js"
+attributes = ""

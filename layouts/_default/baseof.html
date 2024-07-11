@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
+  {{ partial "head/head" . }}
+  {{ if eq .Kind "home" -}}
+    {{ .Scratch.Set "class" "home" -}}
+  {{ else if eq .Kind "404" -}}
+    {{ .Scratch.Set "class" "error404" -}}
+  {{ else if eq .Kind "page" -}}
+    {{ .Scratch.Set "class" .Type -}}
+    {{ .Scratch.Add "class" " single" -}}
+  {{ else -}}
+    {{ .Scratch.Set "class" .Type -}}
+    {{ .Scratch.Add "class" " list" -}}
+  {{ end -}}
+  <body class="{{ .Scratch.Get "class" }}">
+    {{ partial "header" . }}
+    {{ if .Site.Params.googleTagManagerId }}
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ $.Site.Params.googleTagManagerId }}"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {{ end }}
+    <div id="content">
+      {{ block "main" . }}
+      {{ end }}
+    </div>
+    {{ partial "scripts" . }}
+    {{ partialCached "footer" . }}
+  </body>
+</html>

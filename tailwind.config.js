@@ -6,8 +6,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#403a60",
-        secondary: "#8d89a4",
+        primary: "#D9297D",
+        secondary: "#B70E5F",
+        orange: "#F18520",
+        dark: "#151523",
+        darker: "#13131F",
+        light: "#FAFAFB",
+        lightgray: "#F5F1F3",
+        muted: "#B9B9BD",
+        gray: "#6C6C78",
+      },
+      fontFamily: {
+        grostesk: ["Grostesk", ...defaultTheme.fontFamily.sans],
+        graphik: ["Graphik", ...defaultTheme.fontFamily.sans],
+        "ibm-plex-mono": ["IBM Plex Mono", ...defaultTheme.fontFamily.mono],
       },
     },
   },

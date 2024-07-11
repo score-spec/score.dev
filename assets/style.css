@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -452,6 +452,17 @@ html,
   margin: 0;
 }
 
+.text-gradient {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #D9297D var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(217 41 125 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #F18520 var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -564,7 +575,89 @@ html,
   display: block;
 }
 
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.font-grostesk {
+  font-family: Grostesk, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-ibm-plex-mono {
+  font-family: IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-graphik {
+  font-family: Graphik, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Grostesk";
+
+  src: url("/fonts/grostesk/FamiljenGrotesk-Variable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grostesk";
+
+  font-style: italic;
+
+  src: url("/fonts/grostesk/FamiljenGrotesk-VariableItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+
+  src: url("/fonts/ibm-plex-mono/IBMPlexMono-Regular.ttf") format("truetype");
+
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Graphik";
+
+  src: url("/fonts/graphik/GraphikRegular.otf") format("opentype");
+
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Graphik";
+
+  font-style: italic;
+
+  src: url("/fonts/graphik/GraphikRegularItalic.otf") format("opentype");
+
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Graphik";
+
+  src: url("/fonts/graphik/GraphikMedium.otf") format("opentype");
+
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Graphik";
+
+  src: url("/fonts/graphik/GraphikBold.otf") format("opentype");
+
+  font-weight: 700;
 }

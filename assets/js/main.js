@@ -1,3 +1,6 @@
 $(document).ready(function () {
-  return;
+  $("#toggleDrawer, #overlay").click(function () {
+    $("#drawer").toggleClass("drawer-open");
+    $("#overlay").toggleClass("overlay-open");
+  });
 });

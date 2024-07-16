@@ -1,0 +1,26 @@
+[[main]]
+name = "Get started"
+weight = 1
+url = "/get-started"
+
+[[main]]
+name = "Why Score"
+weight = 2
+url = "/why-score"
+
+[[main]]
+name = "Blog"
+weight = 3
+url = "/blog"
+
+[[main]]
+name = "Community"
+weight = 4
+url = "/community"
+
+[[main]]
+name = "Docs"
+weight = 5
+url = "https://docs.score.dev/docs/"
+[main.params]
+  rel = "external"

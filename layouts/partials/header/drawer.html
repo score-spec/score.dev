@@ -1,0 +1,28 @@
+{{ $current := .Page.RelPermalink }}
+<div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+<div id="drawer" class="drawer fixed right-0 top-0 h-full w-64 bg-light shadow-md z-50">
+  <div class="p-4 flex flex-col gap-y-6">
+    {{ range site.Menus.main }}
+      <a 
+        href="{{ .URL }}" 
+        class="font-medium font-graphik w-fit text-base lg:text-lg hover:text-gradient 
+        leading-tight {{ if eq $current (print .URL "/") }} text-primary {{ else }} text-dark {{ end }}"
+        {{ with .Params.rel }}rel="{{ . }}" target="_blank"{{ end }}
+      >
+        {{ .Name }}
+      </a>
+    {{ end }}
+  </div>
+</div>
+<style>
+  .drawer {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  .drawer-open {
+    transform: translateX(0);
+  }
+  .overlay-open {
+    display: block;
+  }
+</style>

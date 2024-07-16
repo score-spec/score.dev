@@ -1,0 +1,26 @@
+{{ $current := .Page.RelPermalink }}
+<nav class="container flex justify-between my-4 items-center">
+  <a href="/">
+    <img src="/images/logo.svg" alt="{{ site.Params.title }} logo" class="max-w-[120px] lg:max-w-full">
+  </a>
+  <div class="hidden lg:flex gap-x-8 items-center">
+    {{ range site.Menus.main }}
+      <a 
+        href="{{ .URL }}" 
+        class="font-medium font-graphik w-fit text-base lg:text-lg hover:text-gradient 
+        leading-tight {{ if eq $current (print .URL "/") }} text-primary {{ else }} text-dark {{ end }}"
+        {{ with .Params.rel }}rel="{{ . }}" target="_blank"{{ end }}
+      >
+        {{ .Name }}
+      </a>
+    {{ end }}
+    {{ partial "cta" . }}
+  </div>
+  <button 
+    class="flex lg:hidden"
+    id="toggleDrawer"
+  >
+    <img src="/svg/menu.svg" alt="" class="w-5 h-5 -translate-y-1">
+  </button>
+  {{ partial "header/drawer" . }}
+</nav>

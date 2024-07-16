@@ -4,6 +4,14 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["content/**/*.md", "layouts/**/*.html"],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "10px",
+        sm: "20px",
+        lg: "30px",
+      },
+    },
     extend: {
       colors: {
         primary: "#D9297D",

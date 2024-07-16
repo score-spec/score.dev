@@ -1,0 +1,23 @@
+{{ with site.Data.site.footer.cta }}
+  <div class="flex flex-col items-center justify-center bg-darker py-32 px-12">
+    <div class="relative container flex justify-center w-full h-full 
+    lg:min-h-[250px] 2xl:min-h-[300px] items-center">
+      <img 
+        src="/svg/ovals_footer.svg" 
+        alt="{{ .text }}" 
+        class="absolute w-[90%] h-full object-contain z-0"
+      >
+      <h2 class="text-white max-w-2xl text-4xl lg:text-[42px] lg:leading-[44px] 
+      font-medium text-center z-10">
+        {{ .text }}
+      </h2>
+    </div>
+    <div class="flex flex-col lg:flex-row container mt-12 gap-8 items-center justify-center">
+      {{ partial "cta" . }}
+      {{ partial "buttons/secondary-white" (dict
+        "url" .secondary_button.url
+        "text" .secondary_button.text
+      ) }}
+    </div>
+  </div>
+{{ end }}

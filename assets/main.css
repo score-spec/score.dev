@@ -46,8 +46,17 @@
     @apply text-[16px] leading-[28px] text-dark font-ibm-plex-mono;
   }
 
-  #why-score-content p {
+  #why-score-content p,
+  #get-started-content p {
     @apply text-black/70 text-base lg:text-lg mb-4;
+  }
+
+  #get-started-content h2 {
+    @apply text-black mb-8;
+  }
+
+  #get-started-content strong {
+    @apply text-black font-bold;
   }
 }
 
@@ -86,6 +95,12 @@
   font-family: "Graphik";
   src: url("/fonts/graphik/GraphikMedium.otf") format("opentype");
   font-weight: 500;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/graphik/GraphikSemibold.otf") format("opentype");
+  font-weight: 600;
 }
 
 @font-face {

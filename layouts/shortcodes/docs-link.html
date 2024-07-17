@@ -1,0 +1,14 @@
+<a href="{{ .Get "url" }}" class="group flex flex-col my-4">
+  <div class="flex items-center gap-x-4">
+    <span class="w-fit text-gradient underline font-medium font-graphik 
+    group-hover:text-primary group-hover:bg-none">
+      {{ .Get "title" }}
+    </span>
+    <img 
+      src="/svg/arrow_forward_orange.svg" 
+      alt="arrow"
+      class="group-hover:translate-x-2 transition-all"
+    >
+  </div>
+  <p class="text-gray underline">{{ .Get "description" }}</p>
+</a>

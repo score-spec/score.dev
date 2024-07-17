@@ -16,11 +16,14 @@
     {{ end }}
     {{ partial "cta" . }}
   </div>
-  <button 
-    class="flex lg:hidden"
-    id="toggleDrawer"
-  >
-    <img src="/svg/menu.svg" alt="" class="w-5 h-5 -translate-y-1">
-  </button>
+  <div class="flex lg:hidden gap-x-4">
+    {{ partial "cta" . }}
+    <button 
+      class="px-2"
+      id="toggleDrawer"
+    >
+      <img src="/svg/menu.svg" alt="" class="w-5 h-5 -translate-y-1">
+    </button>
+  </div>
   {{ partial "header/drawer" . }}
 </nav>

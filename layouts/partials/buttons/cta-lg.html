@@ -1,0 +1,11 @@
+{{ with site.Data.site.call_to_action }}
+  <a
+    class="bg-gradient rounded-2xl text-white font-semibold font-graphik border border-orange
+    flex text-lg py-3 pl-5 pr-6 hover:bg-primary hover:bg-none hover:border-transparent
+    items-center" 
+    href="{{ .url }}"
+  >
+    <img src="{{ .icon }}" alt="{{ .text }}" class="mr-1">
+    {{ .text }}
+  </a>
+{{ end }}

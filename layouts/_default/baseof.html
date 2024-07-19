@@ -13,7 +13,11 @@
     {{ .Scratch.Add "class" " list" -}}
   {{ end -}}
   <body class="{{ .Scratch.Get "class" }}">
-    {{ partial "header/header" . }}
+    {{ if .Page.Params.dark }}
+      {{ partial "header/header-dark" . }}
+    {{ else }}
+      {{ partial "header/header" . }}
+    {{ end }}
     {{ if .Site.Params.googleTagManagerId }}
       <!-- Google Tag Manager (noscript) -->
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ $.Site.Params.googleTagManagerId }}"

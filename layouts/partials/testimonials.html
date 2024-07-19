@@ -2,11 +2,11 @@
   <section class="py-20 flex flex-col px-5 lg:px-0 items-center">
     <div class="w-full flex justify-center bg-center bg-contain py-20 bg-no-repeat"
      style="background-image: url({{ .image }});">
-      <h2 class="text-black font-medium">{{ .title }}</h2>
+      <h2 class="text-black font-medium text-3xl lg:text-5xl">{{ .title }}</h2>
     </div>
-    <div class="container grid grid-cols-1 lg:grid-cols-3 mt-14 gap-x-20">
+    <div class="container grid grid-cols-1 lg:grid-cols-3 mt-14 gap-20">
       {{ range .testimonials }}
-        <div class="flex flex-col justify-between w-full min-h-[200px]">
+        <div class="flex flex-col justify-between w-full lg:min-h-[200px]">
           <p class="font-graphik text-lg">{{ .text }}</p>
           <div class="flex mt-6">
             <img src="{{ .image }}" alt="{{ .name }}" class="h-16">

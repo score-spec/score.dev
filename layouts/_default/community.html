@@ -1,4 +1,21 @@
 {{ define "main" }}
-  <div>community page</div>
+  <section class="bg-dark py-20">
+    <div class="container flex flex-col items-center px-5 py-10 lg:px-0 bg-center bg-no-repeat bg-contain"
+    style="background-image: url({{ .Params.image }});">
+      <h1 class="text-white text-center text-6xl font-medium">{{ .Params.heading }}</h1>
+      <p class="text-white/70 max-w-3xl text-lg text-center leading-[26px] mt-4">
+        {{ .Params.description }}
+      </p>
+      <div class="flex flex-col lg:flex-row py-4 gap-4 items-center justify-center">
+        {{ partial "buttons/cta-lg" . }}
+        {{ partial "buttons/secondary-white" (dict
+          "url" .Params.secondary_button.url
+          "text" .Params.secondary_button.text
+        ) }}
+      </div>
+    </div>
+  </section>
+  {{ partial "community/socials" . }}
+  {{ partial "community/contributors" . }}
   {{ partial "testimonials" . }}
 {{ end }}

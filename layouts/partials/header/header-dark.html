@@ -1,0 +1,31 @@
+{{ $current := .Page.RelPermalink }}
+<div class="bg-dark">
+  <nav class="container flex justify-between py-4 items-center">
+    <a href="/">
+      <img src="/images/logo-white.svg" alt="{{ site.Params.title }} logo" class="max-w-[120px] lg:max-w-full">
+    </a>
+    <div class="hidden lg:flex gap-x-8 items-center">
+      {{ range site.Menus.main }}
+        <a 
+          href="{{ .URL }}" 
+          class="font-medium font-graphik w-fit text-base lg:text-lg hover:text-gradient 
+          leading-tight {{ if eq $current (print .URL "/") }} text-gradient {{ else }} text-white {{ end }}"
+          {{ with .Params.rel }}rel="{{ . }}" target="_blank"{{ end }}
+        >
+          {{ .Name }}
+        </a>
+      {{ end }}
+      {{ partial "buttons/cta" . }}
+    </div>
+    <div class="flex lg:hidden gap-x-4">
+      {{/*  {{ partial "buttons/cta" . }}  */}}
+      <button 
+        class="px-2"
+        id="toggleDrawer"
+      >
+        <img src="/svg/menu-white.svg" alt="menu" class="w-5 h-5 -translate-y-1">
+      </button>
+    </div>
+    {{ partial "header/drawer-dark" . }}
+  </nav>
+</div>

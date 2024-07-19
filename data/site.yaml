@@ -7,7 +7,7 @@ footer:
     text: Configure once. Deploy anywhere. From local to prod.
     secondary_button:
       text: Get started
-      url: /
+      url: /get-started
   navigation:
     title: Join the community
     text: Share best practices around config mgmt and learn how others integrate Score in their delivery workflows.

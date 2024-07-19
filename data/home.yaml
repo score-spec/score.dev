@@ -1,3 +1,31 @@
+why_score:
+  title: Why use Score?
+  text: Score is loved by developers because they can run the same workload on completely different technology stacks, without needing to be an expert in any one of them.
+  sections:
+    - from:
+        title: Cognitive load
+        text: Developers are forced to become experts in a variety of tech and tools, just do deploy a simple change to their apps.
+        icon: /svg/icon-cognitive.svg
+      to:
+        title: Features over Ops
+        text: Score takes care of configs for developers so they can focus on shipping features instead of fighting with infrastructure.
+        icon: /svg/icon-checklist.svg
+    - from:
+        title: Config drift
+        text: Multiple config rules, constructs and values across local and remote environments increase the risk of misconfiguration.
+        icon: /svg/icon-config-drift.svg
+      to:
+        title: Local to prod
+        text: With Score you can easily transition from local to to remote environments. Configs stay consistent, everywhere you deploy.
+        icon: /svg/icon-multiple_stop.svg
+    - from:
+        title: YAML bloat
+        text: Trying to keep many environment-specific config files in sync leads to repetitive configuration work and YAML bloat.
+        icon: /svg/icon-yaml-bloat.svg
+      to:
+        title: One file
+        text: Score lets you use one specification file as the single source of truth, easily translatable across your delivery setup.
+        icon: /svg/icon-task.svg
 easily_integrates:
   title: Easily integrates in your existing workflows
   sections:

@@ -1,0 +1,36 @@
+{{ with site.Data.home.why_score }}
+  <section class="bg-lightgray py-24 px-5 lg:px-0 border-b border-b-gray/50">
+    <div class="flex flex-col items-center container px-5 lg:px-0">
+      <h2 class="text-black text-center text-4xl lg:text-5xl font-medium">{{ .title }}</h2>
+      <p class="text-black/70 text-2xl max-w-3xl text-center mt-8">{{ .text }}</p>
+      <div 
+        class="flex flex-col items-center rounded-[2rem] border border-gray/50 px-5 lg:px-11 w-full mt-16" 
+        style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 42%,#fff4eb);">
+        {{ range $i, $v := .sections }}
+          {{ if $i }}
+            <div class="w-full h-[1px] bg-gray/50"></div>
+          {{ end }}
+          <div class="w-full grid grid-cols-1 lg:grid-cols-3 py-16">
+            <div class="flex gap-x-4">
+              <img src="{{ $v.from.icon }}" alt="{{ $v.from.title }}" class="h-12"> 
+              <div class="flex flex-col">
+                <h3 class="text-xl lg:text-3xl text-black font-medium">{{ $v.from.title }}</h3>
+                <p class="text-base text-black/70 lg:mt-4 mt-2">{{ $v.from.text }}</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center w-full min-h-[200px]">
+              <img src="/svg/arrow_forward_home.svg" alt="Arrow forward" class="rotate-90 lg:rotate-0">
+            </div>
+            <div class="flex gap-x-4">
+              <img src="{{ $v.to.icon }}" alt="{{ $v.to.title }}" class="h-12"> 
+              <div class="flex flex-col">
+                <h3 class="text-xl lg:text-3xl text-black font-medium">{{ $v.to.title }}</h3>
+                <p class="text-base text-black/70 lg:mt-4 mt-2">{{ $v.to.text }}</p>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

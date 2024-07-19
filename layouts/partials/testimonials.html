@@ -1,0 +1,22 @@
+{{ with site.Data.testimonials }}
+  <section class="py-20 flex flex-col px-5 lg:px-0 items-center">
+    <div class="w-full flex justify-center bg-center bg-contain py-20 bg-no-repeat"
+     style="background-image: url({{ .image }});">
+      <h2 class="text-black font-medium">{{ .title }}</h2>
+    </div>
+    <div class="container grid grid-cols-1 lg:grid-cols-3 mt-14 gap-x-20">
+      {{ range .testimonials }}
+        <div class="flex flex-col justify-between w-full min-h-[200px]">
+          <p class="font-graphik text-lg">{{ .text }}</p>
+          <div class="flex mt-6">
+            <img src="{{ .image }}" alt="{{ .name }}" class="h-16">
+            <div class="flex flex-col ml-4">
+              <p class="font-medium font-grostesk text-lg">{{ .name }}</p>
+              <p class="font-ibm-plex-mono text-lg">{{ .role }}</p>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

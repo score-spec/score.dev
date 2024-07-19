@@ -58,6 +58,14 @@
   #get-started-content strong {
     @apply text-black font-bold;
   }
+
+  #blog-post-content p {
+    @apply text-black text-base lg:text-lg mb-4;
+  }
+
+  #blog-post-content a {
+    @apply text-gradient hover:text-primary hover:underline hover:bg-none;
+  }
 }
 
 @font-face {

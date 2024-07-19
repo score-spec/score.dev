@@ -1,3 +1,15 @@
+easily_integrates:
+  title: Easily integrates in your existing workflows
+  sections:
+    - title: Extendable and customizable
+      text: The <span class="highlight-code">score.yaml</span> file can be extended and customised according to your needs. The score spec leaves room for environment specific overrides as well as platform specific extensions that allow to list additional properties or requirements.
+      image: /images/home/6374bfdcaeb3b3355842b6bc_score-overrides-16nov22-p-500.png
+    - title: Declarative by nature
+      text: Score lets developers define the resources required by their workloads in a declarative way. You declare once that your workload needs to listen on a port to receive requests - and don’t not need to worry where and how the exact port is defined in e.g. a remote Kubernetes environment. By declaring what the workload needs to run, the “how” becomes an environment specific implementation detail that is taken care of by Score.
+      image: /images/home/635a8680ee487067a410b7e8_declarative-by-nature-score-p-800.png
+    - title: Seamless tech stack and workflow integration
+      text: Score introduces a single change to your setup by adding a <span class="highlight-code">score.yaml</span> file to your workloads’ repo. Everything else stays as is. Once Score is set up, you can continue using it even if the underlying tech stack changes.
+      image: /images/home/667d6c310c1a8dc606c3321d_seamless-yaml-score-docker-kubernetes-p-800.png
 single_spec:
   title: A single spec to rule them all
   image: /images/home/667d6bd96a95417611bc96f5_score-yaml-docker-kubernetes-p-1600.png

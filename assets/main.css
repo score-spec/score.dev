@@ -46,6 +46,10 @@
     @apply text-[16px] leading-[28px] text-dark font-ibm-plex-mono;
   }
 
+  .highlight-code {
+    @apply text-orange font-ibm-plex-mono;
+  }
+
   #why-score-content p,
   #get-started-content p {
     @apply text-black/70 text-base lg:text-lg mb-4;

@@ -1,0 +1,41 @@
+{{ with site.Data.home.easily_integrates }}
+  <section 
+    class="bg-dark py-32 px-5 lg:px-0 bg-top bg-no-repeat" 
+    style="background-image: url('/images/home/top_glow.svg');"
+  >
+    <h2 class="text-white text-center text-4xl lg:text-5xl font-medium">{{ .title }}</h2>
+    <div class="container mt-40">
+      {{ range $i, $v := .sections }}
+        {{ if eq (mod $i 2) 0 }}
+          <div class="flex flex-col-reverse lg:flex-row justify-between mt-32">
+            <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+              <h3 class="text-white text-2xl lg:text-3xl font-medium">{{ $v.title }}</h3>
+              <p class="text-white/70 text-lg mt-4 max-w-lg">{{ $v.text | safeHTML }}</p>
+            </div>
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img 
+                src="{{ $v.image }}" 
+                alt="{{ $v.title }}" 
+                class="max-w-md w-full object-contain"
+              >
+            </div>
+          </div>
+        {{ else }}
+          <div class="flex flex-col-reverse lg:flex-row-reverse justify-between mt-32">
+            <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+              <h3 class="text-white text-2xl lg:text-3xl font-medium">{{ $v.title }}</h3>
+              <p class="text-white/70 text-lg mt-4 max-w-lg">{{ $v.text | safeHTML }}</p>
+            </div>
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img 
+                src="{{ $v.image }}" 
+                alt="{{ $v.title }}" 
+                class="max-w-md w-full object-contain"
+              >
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

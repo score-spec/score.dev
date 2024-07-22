@@ -1,3 +1,9 @@
+hero:
+  title: One easy way to configure all your workloads. Everywhere.
+  description: Score is a developer-centric and platform-agnostic workload specification. It ensures consistent configuration between local and remote environments. And it's open source.
+  secondary_button:
+    text: Get started
+    link: /get-started
 why_score:
   title: Why use Score?
   text: Score is loved by developers because they can run the same workload on completely different technology stacks, without needing to be an expert in any one of them.

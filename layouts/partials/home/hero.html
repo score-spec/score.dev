@@ -1,0 +1,46 @@
+{{ with site.Data.home.hero }}
+<section class="bg-white py-16">
+  <div class="container flex flex-col lg:flex-row gap-12 text-6xl lg:text-4xl font-medium items-center">
+    <div class="w-full lg:w-2/5 flex flex-col">
+      <h1 class="lg:pr-4">{{ .title }}</h1>
+      <p class="mt-4 font-graphik font-normal text-black/70 text-xl leading-relaxed lg:pr-4">{{ .description }}</p>
+      <div class="flex flex-col lg:flex-row mt-8 gap-4 items-center">
+        {{ partial "buttons/cta-lg" . }}
+        {{ partial "buttons/secondary" (dict
+          "url" .secondary_button.url
+          "text" .secondary_button.text
+        ) }}
+      </div>
+    </div>
+    <div class="w-full lg:w-3/5 flex flex-col items-center">
+      <div class="max-w-[675px] w-full relative flex justify-center">
+        <img 
+          src="/images/home/6377545739ff1e69303c2d48_hero-circles-front-layer-full.svg" 
+          alt="hero-1"
+          class="absolute z-[5] top-auto bottom-0 left-0 right-0"
+        >
+        <img 
+          src="/images/home/6377545748814a1516710678_hero-circles-right-layer-full.svg" 
+          alt="hero-2"
+          class="absolute z-[4] max-h-full block top-[1px] bottom-0 left-auto right-[1px]"
+        >
+        <img 
+          src="/images/home/6377545715fcfe2d83090dcb_hero-circles-bg.svg" 
+          alt="hero-3"
+          class="relative"
+        >
+        <img 
+          src="/images/home/63774f7f086ed575eed1aec6_hero-icons.svg" 
+          alt="hero-4"
+          class="absolute z-[6] top-auto -bottom-[20%] left-[1%] right-0"
+        >
+        <img 
+          src="/images/home/66743936356549b315dad305_score-demo.gif" 
+          alt="hero-5"
+          class="absolute rounded-2xl w-[30rem] lg:max-w-none block -top-5 left-[12.5%] max-w-[76%]"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

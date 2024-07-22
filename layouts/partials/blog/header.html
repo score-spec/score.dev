@@ -1,5 +1,5 @@
 <section class="bg-lightgray py-16 w-full flex justify-center">
-  <div class="max-w-7xl w-full flex flex-col px-5 lg:px-0">
+  <div class="w-full flex flex-col container">
     <a class="flex group items-center gap-x-2 w-full" href="/blog">
       <img 
         src="/svg/arrow_forward_orange.svg" 
@@ -37,7 +37,7 @@
           </div>
         {{ end }}
       </div>
-      <div class="lg:w-1/2 w-full flex flex-col">
+      <div class="lg:w-1/2 w-full flex flex-col mt-8 lg:mt-0">
         <img 
           src="{{ with .Resources.Get .Params.image }}{{ .RelPermalink }}{{ end }}" 
           alt="{{ .Title }}" 

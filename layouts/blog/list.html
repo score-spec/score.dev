@@ -1,3 +1,33 @@
 {{ define "main" }}
-  <div>blog index</div>
+{{ $featured_post := .GetPage .Params.featured_post }}
+{{ $first_three := where .Pages "Title" "ne" $featured_post.Title | first 3 }}
+{{ $rest := where .Pages "Title" "ne" $featured_post.Title | after 3 }}
+  <section class="py-12 flex flex-col items-center">
+    <h1 class="mb-20 text-[64px] text-black font-medium">{{ .Title }}</h1>
+    <div class="flex flex-col lg:flex-row justify-between w-full container gap-16">
+      <div class="w-full flex flex-col lg:w-[55%]">
+        <div class="flex w-full  items-center gap-x-2">
+          <p class="text-gray font-ibm-plex-mono">FEATURED</p>
+          <div class="w-full h-[1px] bg-muted"></div>
+        </div>
+        {{ with $featured_post }}
+          {{ partial "blog/post-in-list-featured" . }}
+        {{ end }}
+      </div>
+      <div class="w-full flex flex-col lg:w-[45%] gap-y-6">
+        <div class="flex w-full items-center gap-x-2">
+          <p class="text-gray font-ibm-plex-mono">LATEST</p>
+          <div class="w-full h-[1px] bg-muted"></div>
+        </div>
+        {{ range $first_three }}
+          {{ partial "blog/post-in-list-side" . }}
+        {{ end }}
+      </div>
+    </div>
+    <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 container mt-20">
+      {{ range $rest }}
+        {{ partial "blog/post-in-list-regular" . }}
+      {{ end }}
+    </div>
+  </section>
 {{ end }}

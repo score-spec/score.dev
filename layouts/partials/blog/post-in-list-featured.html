@@ -1,0 +1,30 @@
+<div class="flex flex-col mt-6 lg:mr-6">
+  <a class="overflow-hidden rounded-2xl" href="{{ .RelPermalink }}">
+    <img 
+      src="{{ with .Resources.Get .Params.image }}{{ .RelPermalink }}{{ end }}" 
+      alt="{{ .Title }}" 
+      class="w-full lg:h-[300px] h-[200px] object-cover rounded-2xl hover:scale-105 transition-all"
+    >
+  </a>
+  <p class="text-gray font-ibm-plex-mono uppercase flex items-center text-xs mt-4">
+    {{ time.Format "January 2, 2006" .Date }}
+  </p>
+  <a href="{{ .RelPermalink }}">
+    <h2 class="lg:text-black text-4xl lg:text-5xl font-medium mt-2 leading-[1.2] hover:text-primary transition-all">
+      {{ .Title }}
+    </h2>
+  </a>
+  <div class="text-base text-black/70 mt-4 font-graphik">
+    {{ .Params.description | markdownify }}
+  </div>
+  <a class="flex group items-center gap-x-2 w-full mt-4" href="{{ .RelPermalink }}">
+    <span class="text-gradient font-medium font-graphik">
+      Read more
+    </span>
+    <img 
+      src="/svg/arrow_forward_orange.svg" 
+      alt="arrow"
+      class="group-hover:translate-x-2 transition-all"
+    >
+  </a>
+</div>

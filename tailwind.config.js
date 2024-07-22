@@ -7,9 +7,9 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "10px",
-        sm: "20px",
-        lg: "30px",
+        DEFAULT: "20px",
+        sm: "40px",
+        lg: "50px",
       },
     },
     extend: {

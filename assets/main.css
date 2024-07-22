@@ -55,6 +55,22 @@
     @apply text-orange font-ibm-plex-mono;
   }
 
+  .how-it-works-title-code {
+    @apply text-[18px] leading-[24px] lg:text-[32px] lg:leading-[36px] text-dark font-ibm-plex-mono;
+  }
+
+  .tab-active {
+    @apply !text-primary !border-b-primary !bg-primary/10;
+  }
+
+  .tab-pane-active {
+    @apply !block;
+  }
+
+  .tab-pane-active a {
+    @apply text-primary hover:underline;
+  }
+
   #why-score-content p,
   #get-started-content p {
     @apply text-black/70 text-base lg:text-lg mb-4;

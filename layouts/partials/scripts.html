@@ -10,3 +10,11 @@
   integrity="{{ $script.Data.Integrity }}" 
   crossorigin="anonymous"
 ></script>
+
+<!-- Other Scripts -->
+{{ $tabs := resources.Get "js/tabs.js" | minify | fingerprint "sha512"}}
+<script 
+  src="{{ $tabs.Permalink }}" 
+  integrity="{{ $tabs.Data.Integrity }}" 
+  crossorigin="anonymous"
+></script>

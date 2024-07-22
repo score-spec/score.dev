@@ -41,3 +41,91 @@ easily_integrates:
 single_spec:
   title: A single spec to rule them all
   image: /images/home/667d6bd96a95417611bc96f5_score-yaml-docker-kubernetes-p-1600.png
+how_score_works:
+  title: How Score works
+  steps:
+    - title: "Create a <code class='how-it-works-title-code'>score.yaml</code> file for the application"
+      code:
+        type: single
+        content: |
+          ```
+          apiVersion: score.dev/v1b1
+
+          metadata:
+            name: service-a
+
+          service:
+          ports:
+            www:
+              port: 8000
+              targetPort: 80
+
+          containers:
+            container-id:
+              image: busybox
+              variables:
+                CONNECTION_STRING: postgresql://${resources.db.username}:${resources.db.password}@${resources.db.host}:${resources.db.port}
+
+          resources:
+            db:
+              type: postgres
+          ```
+    - title: Install a Score Implementation
+      code:
+        type: tabs
+        tabs:
+          - title: score-compose
+            type: code
+            content: |
+              ```
+              brew install score-spec/tap/score-compose
+              ```
+          - title: score-k8s
+            type: code
+            content: |
+              ```
+              brew install score-spec/tap/score-k8s
+              ```
+          - title: score-?
+            type: text
+            content: The Score Specification has the potential to integrate with many container orchestration platforms and tooling such as Kustomize, Amazon ECS, Google Cloud Run, or Nomad. Help us shape the next generation of Score implementation CLI's and start contributing [here](https://github.com/score-spec/spec#-contributing).
+    - title: Initialize directory & generate
+      code:
+        type: tabs
+        tabs:
+          - title: score-compose
+            type: code
+            content: |
+              ```
+              score-compose init
+              score-compose generate score.yaml
+              ```
+          - title: score-k8s
+            type: code
+            content: |
+              ```
+              score-k8s init
+              score-k8s generate score.yaml
+              ```
+          - title: score-?
+            type: text
+            content: The Score Specification has the potential to integrate with many container orchestration platforms and tooling such as Kustomize, Amazon ECS, Google Cloud Run, or Nomad. Help us shape the next generation of Score implementation CLI's and start contributing [here](https://github.com/score-spec/spec#-contributing).
+    - title: Run your workload
+      code:
+        type: tabs
+        tabs:
+          - title: score-compose
+            type: code
+            content: |
+              ```
+              docker-compose up -d
+              ```
+          - title: score-k8s
+            type: code
+            content: |
+              ```
+              kubectl apply -f manifests.yaml
+              ```
+          - title: score-?
+            type: text
+            content: The Score Specification has the potential to integrate with many container orchestration platforms and tooling such as Kustomize, Amazon ECS, Google Cloud Run, or Nomad. Help us shape the next generation of Score implementation CLI's and start contributing [here](https://github.com/score-spec/spec#-contributing).

@@ -575,6 +575,42 @@ code,
   color: rgb(241 133 32 / var(--tw-text-opacity));
 }
 
+.how-it-works-title-code {
+  font-family: IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 18px;
+  line-height: 24px;
+  --tw-text-opacity: 1;
+  color: rgb(21 21 35 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .how-it-works-title-code {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.tab-active {
+  --tw-border-opacity: 1 !important;
+  border-bottom-color: rgb(217 41 125 / var(--tw-border-opacity)) !important;
+  background-color: rgb(217 41 125 / 0.1) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(217 41 125 / var(--tw-text-opacity)) !important;
+}
+
+.tab-pane-active {
+  display: block !important;
+}
+
+.tab-pane-active a {
+  --tw-text-opacity: 1;
+  color: rgb(217 41 125 / var(--tw-text-opacity));
+}
+
+.tab-pane-active a:hover {
+  text-decoration-line: underline;
+}
+
 #why-score-content p,
   #get-started-content p {
   margin-bottom: 1rem;
@@ -932,6 +968,10 @@ code,
   margin-bottom: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -1085,6 +1125,22 @@ code,
   min-height: 200px;
 }
 
+.min-h-\[150px\] {
+  min-height: 150px;
+}
+
+.min-h-\[1090px\] {
+  min-height: 1090px;
+}
+
+.min-h-\[100px\] {
+  min-height: 100px;
+}
+
+.min-h-\[80px\] {
+  min-height: 80px;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -1130,10 +1186,6 @@ code,
   max-width: 56rem;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
-}
-
 .max-w-\[120px\] {
   max-width: 120px;
 }
@@ -1169,6 +1221,10 @@ code,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1197,6 +1253,10 @@ code,
   justify-content: space-between;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-14 {
   gap: 3.5rem;
 }
@@ -1215,6 +1275,11 @@ code,
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
 }
 
 .gap-x-12 {
@@ -1266,6 +1331,10 @@ code,
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1284,12 +1353,21 @@ code,
   border-radius: 2rem;
 }
 
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .border-t {
@@ -1300,6 +1378,11 @@ code,
   border-color: rgb(108 108 120 / 0.5);
 }
 
+.border-muted {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 185 189 / var(--tw-border-opacity));
+}
+
 .border-orange {
   --tw-border-opacity: 1;
   border-color: rgb(241 133 32 / var(--tw-border-opacity));
@@ -1307,6 +1390,10 @@ code,
 
 .border-b-gray\/50 {
   border-bottom-color: rgb(108 108 120 / 0.5);
+}
+
+.border-b-transparent {
+  border-bottom-color: transparent;
 }
 
 .border-t-gray\/50 {
@@ -1328,6 +1415,10 @@ code,
   background-color: rgb(19 19 31 / var(--tw-bg-opacity));
 }
 
+.bg-gray\/30 {
+  background-color: rgb(108 108 120 / 0.3);
+}
+
 .bg-gray\/50 {
   background-color: rgb(108 108 120 / 0.5);
 }
@@ -1345,6 +1436,14 @@ code,
 .bg-muted {
   --tw-bg-opacity: 1;
   background-color: rgb(185 185 189 / var(--tw-bg-opacity));
+}
+
+.bg-muted\/20 {
+  background-color: rgb(185 185 189 / 0.2);
+}
+
+.bg-muted\/30 {
+  background-color: rgb(185 185 189 / 0.3);
 }
 
 .bg-opacity-50 {
@@ -1399,6 +1498,11 @@ code,
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .py-10 {
@@ -1703,6 +1807,11 @@ code,
   border-color: transparent;
 }
 
+.hover\:border-b-gray:hover {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(108 108 120 / var(--tw-border-opacity));
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(217 41 125 / var(--tw-bg-opacity));
@@ -1782,8 +1891,21 @@ code,
     min-height: 250px;
   }
 
+  .lg\:min-h-min {
+    min-height: -moz-min-content;
+    min-height: min-content;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .lg\:w-\[45\%\] {

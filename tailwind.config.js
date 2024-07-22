@@ -32,5 +32,10 @@ module.exports = {
     },
   },
   plugins: [],
-  safelist: ["highlight-code"],
+  safelist: [
+    "highlight-code",
+    "how-it-works-title-code",
+    "tab-active",
+    "tab-pane-active",
+  ],
 };

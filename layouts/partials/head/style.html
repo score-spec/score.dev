@@ -22,3 +22,7 @@
 
 {{ $style := resources.Get "style.css" }}
 <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+{{ $syntax := resources.Get "syntax.css" }}
+<link rel="stylesheet" href="{{ $syntax.Permalink }}" />
+

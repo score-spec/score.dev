@@ -41,6 +41,11 @@
     @apply text-[16px] leading-[24px] text-dark font-graphik;
   }
 
+  blockquote {
+    @apply text-[24px] leading-[32px] text-dark font-graphik bg-primary/5 
+    border-l-4 border-primary/50 rounded-md px-3 py-2 mb-4;
+  }
+
   code,
   .code {
     @apply text-[16px] leading-[28px] text-dark font-ibm-plex-mono;
@@ -67,8 +72,54 @@
     @apply text-black text-base lg:text-lg mb-4;
   }
 
+  #blog-post-content blockquote p {
+    @apply text-black text-base lg:text-lg mb-0;
+  }
+
   #blog-post-content a {
     @apply text-gradient hover:text-primary hover:underline hover:bg-none;
+  }
+
+  #blog-post-content h2 {
+    @apply text-black mb-8;
+  }
+
+  #blog-post-content h3 {
+    @apply text-black mb-6;
+  }
+
+  #blog-post-content h4 {
+    @apply text-black mb-4;
+  }
+
+  #blog-post-content h5,
+  #blog-post-content h6 {
+    @apply text-black font-bold mb-2;
+  }
+
+  #blog-post-content ol,
+  #blog-post-content ul {
+    @apply mb-4;
+  }
+
+  #blog-post-content li {
+    @apply text-black text-base lg:text-lg;
+  }
+
+  #blog-post-content code:not(pre code) {
+    @apply text-primary bg-lightgray rounded-md px-2;
+  }
+
+  #blog-post-content ul li {
+    @apply list-disc;
+  }
+
+  #blog-post-content ol li {
+    @apply list-decimal;
+  }
+
+  #blog-post-content figure {
+    @apply mb-4;
   }
 }
 

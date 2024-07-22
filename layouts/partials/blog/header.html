@@ -31,7 +31,7 @@
             <img 
               src="{{ with .Resources.Get .Params.image }}{{ .RelPermalink }}{{ end }}" 
               alt="{{ .Params.name }}"
-              class="h-14 object-cover"
+              class="h-14 object-cover rounded-2xl"
             >
             <span class="font-medium font-graphik text-lg text-dark">{{ .Params.name }}{{ with .Params.role }}, {{ . }}{{ end }}</span>
           </div>

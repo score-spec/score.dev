@@ -33,9 +33,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Hugo
         run: |
-          hugo \
+          node_modules/.bin/hugo/hugo \
             --minify \
-            --themesDir ../.. \
             --environment staging \
             --baseURL "${{ steps.pages.outputs.base_url }}"
       - name: Upload artifact

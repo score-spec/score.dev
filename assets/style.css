@@ -1243,6 +1243,10 @@ code,
   max-width: 160px;
 }
 
+.max-w-\[166px\] {
+  max-width: 166px;
+}
+
 .max-w-\[675px\] {
   max-width: 675px;
 }
@@ -2000,6 +2004,10 @@ code,
 
   .lg\:w-\[55\%\] {
     width: 55%;
+  }
+
+  .lg\:max-w-\[166px\] {
+    max-width: 166px;
   }
 
   .lg\:max-w-\[70\%\] {

@@ -36,7 +36,7 @@ jobs:
           node_modules/.bin/hugo/hugo \
             --minify \
             --environment staging \
-            --baseURL "${{ steps.pages.outputs.base_url }}score.dev/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -44,7 +44,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}/score.dev
     runs-on: ubuntu-latest
     needs: build
     steps:

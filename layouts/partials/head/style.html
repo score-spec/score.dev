@@ -26,3 +26,5 @@
 {{ $syntax := resources.Get "syntax.css" }}
 <link rel="stylesheet" href="{{ $syntax.Permalink }}" />
 
+{{ partial "fonts" . }}
+

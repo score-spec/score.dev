@@ -1,7 +1,7 @@
 {{ with site.Data.testimonials }}
   <section class="py-20 flex flex-col container items-center">
     <div class="w-full flex justify-center bg-center bg-contain py-20 bg-no-repeat"
-     style="background-image: url({{ .image }});">
+     style="background-image: url({{ site.BaseURL }}{{ .image }});">
       <h2 class="text-black font-medium text-3xl lg:text-5xl">{{ .title }}</h2>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 mt-14 gap-20">
@@ -9,7 +9,7 @@
         <div class="flex flex-col justify-between w-full lg:min-h-[200px]">
           <p class="font-graphik text-lg">{{ .text }}</p>
           <div class="flex mt-6">
-            <img src="{{ .image }}" alt="{{ .name }}" class="h-16">
+            <img src="{{ site.BaseURL }}{{ .image }}" alt="{{ .name }}" class="h-16">
             <div class="flex flex-col ml-4">
               <p class="font-medium font-grostesk text-lg">{{ .name }}</p>
               <p class="font-ibm-plex-mono text-lg">{{ .role }}</p>

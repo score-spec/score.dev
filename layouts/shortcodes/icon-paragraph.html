@@ -1,11 +1,11 @@
 <div class="flex my-8 gap-x-8">
   <div class="relative w-32 h-fit flex items-center justify-center">
     <img 
-      src="/svg/icon-background.svg" 
+      src="{{ site.BaseURL }}svg/icon-background.svg" 
       alt="icon background" 
       class="absolute object-cover w-full top-0 left-0 z-0"
     >
-    <img src="{{ .Get "icon" }}" alt="icon" class="mt-5">
+    <img src="{{ site.BaseURL }}{{ .Get "icon" }}" alt="icon" class="mt-5">
   </div>
   <div class="w-full font-graphik">
     {{ .Inner | markdownify }}

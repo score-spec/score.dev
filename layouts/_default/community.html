@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section class="bg-dark py-20">
     <div class="container flex flex-col items-center px-5 py-10 lg:px-0 bg-center bg-no-repeat bg-contain"
-    style="background-image: url({{ .Params.image }});">
+    style="background-image: url({{ site.BaseURL }}{{ .Params.image }});">
       <h1 class="text-white text-center text-6xl font-medium">{{ .Params.heading }}</h1>
       <p class="text-white/70 max-w-3xl text-lg text-center leading-[26px] mt-4">
         {{ .Params.description }}

@@ -1,8 +1,8 @@
 <section class="bg-lightgray py-16 w-full flex justify-center">
   <div class="w-full flex flex-col container">
-    <a class="flex group items-center gap-x-2 w-full" href="/blog">
+    <a class="flex group items-center gap-x-2 w-full" href="{{ site.BaseURL }}blog">
       <img 
-        src="/svg/arrow_forward_orange.svg" 
+        src="{{ site.BaseURL }}svg/arrow_forward_orange.svg" 
         alt="arrow"
         class="group-hover:-translate-x-2 transition-all rotate-180"
       >
@@ -15,11 +15,11 @@
       <div class="lg:w-1/2 w-full flex flex-col">
         <div class="flex gap-x-12">
           <p class="text-gray font-ibm-plex-mono uppercase flex items-center gap-x-2 h-fit">
-            <img src="/svg/calendar_month.svg" alt="date">
+            <img src="{{ site.BaseURL }}svg/calendar_month.svg" alt="date">
             {{ time.Format "January 2, 2006" .Date }}
           </p>
           <p class="text-gray font-ibm-plex-mono uppercase flex items-center gap-x-2 h-fit">
-            <img src="/svg/schedule.svg" alt="date">
+            <img src="{{ site.BaseURL }}svg/schedule.svg" alt="date">
             {{ .ReadingTime }} min read
           </p>
         </div>
@@ -47,13 +47,13 @@
           <div class="w-full h-[1px] bg-muted"></div>
           <p class="text-gray font-ibm-plex-mono">SHARE</p>
           <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https://score.dev/blog/score-joins-the-cncf-as-a-sandbox-project">
-            <img src="/svg/linkedin_logo.svg" alt="linkedin share" class="w-8 h-8">
+            <img src="{{ site.BaseURL }}svg/linkedin_logo.svg" alt="linkedin share" class="w-8 h-8">
           </a>
           <a target="_blank" href="https://x.com/intent/post?url={{ .Permalink }}&text={{ .Title }}">
-            <img src="/svg/twitter_logo.svg" alt="twitter share" class="w-8 h-8">
+            <img src="{{ site.BaseURL }}svg/twitter_logo.svg" alt="twitter share" class="w-8 h-8">
           </a>
           <a target="_blank" href="http://www.reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}">
-            <img src="/svg/reddit_logo.svg" alt="reddit share" class="w-8 h-8">
+            <img src="{{ site.BaseURL }}svg/reddit_logo.svg" alt="reddit share" class="w-8 h-8">
           </a>
         </div>
       </div>

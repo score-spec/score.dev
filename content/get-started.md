@@ -16,14 +16,14 @@ layout: get-started
 
 Score is community driven. New contributors are welcome and highly encouraged.
 
-{{< icon-link text="Give our project a star" icon="/svg/star_gradient.svg" url="https://github.com/score-spec/spec" >}}
+{{< icon-link text="Give our project a star" icon="svg/star_gradient.svg" url="https://github.com/score-spec/spec" >}}
 
-{{< icon-link text="Join us on Slack" icon="/svg/slack_logo.svg" url="https://join.slack.com/t/scorecommunity/shared_invite/zt-1i2glkqkl-EnjSWSCgYUyaEGwmDYBZZQ" >}}
+{{< icon-link text="Join us on Slack" icon="svg/slack_logo.svg" url="https://join.slack.com/t/scorecommunity/shared_invite/zt-1i2glkqkl-EnjSWSCgYUyaEGwmDYBZZQ" >}}
 
 **Contact us**
 
-{{< icon-link text="Follow us on twitter" icon="/svg/twitter_logo.svg" url="https://twitter.com/score_dev?s=21&t=WMiZwDJFfOf6Hzb9BvLQCg" >}}
+{{< icon-link text="Follow us on twitter" icon="svg/twitter_logo.svg" url="https://twitter.com/score_dev?s=21&t=WMiZwDJFfOf6Hzb9BvLQCg" >}}
 
-{{< icon-link text="team@score.dev" icon="/svg/chat.svg" url="mailto:team@score.dev" >}}
+{{< icon-link text="team@score.dev" icon="svg/chat.svg" url="mailto:team@score.dev" >}}
 
-{{< icon-link text="abuse@score.dev" icon="/svg/chat.svg" url="mailto:abuse@score.dev" >}}
+{{< icon-link text="abuse@score.dev" icon="svg/chat.svg" url="mailto:abuse@score.dev" >}}

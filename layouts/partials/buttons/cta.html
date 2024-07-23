@@ -5,7 +5,7 @@
     items-center" 
     href="{{ .url }}"
   >
-    <img src="{{ .icon }}" alt="{{ .text }}" class="mr-1">
+    <img src="{{ site.BaseURL }}{{ .icon }}" alt="{{ .text }}" class="mr-1">
     {{ .text }}
   </a>
 {{ end }}

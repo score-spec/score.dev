@@ -12,15 +12,15 @@ We believe that developers shouldn’t have to fight a symphony orchestra of tec
 
 The Score specification was developed against a set of workload centric development principles:
 
-{{< icon-paragraph icon="/svg/flag.svg" >}}
+{{< icon-paragraph icon="svg/flag.svg" >}}
 **Establish a single source of truth for workload configuration** that serves as the main point of reference on how to run a workload, independently of target platform and environment. This allows to generate one directional configuration and combine it with environment specific parameters in the target environment.
 {{< /icon-paragraph >}}
 
-{{< icon-paragraph icon="/svg/key_visualizer.svg" >}}
+{{< icon-paragraph icon="svg/key_visualizer.svg" >}}
 **Provide a tightly scoped workload spec** that shields developers from the configurational complexity of container orchestrators and tooling. By exposing only core workload constructs, developers can keep their focus.
 {{< /icon-paragraph >}}
 
-{{< icon-paragraph icon="/svg/manage_history.svg" >}}
+{{< icon-paragraph icon="svg/manage_history.svg" >}}
 **Implement a declarative approach for infrastructure management** that allows developers to describe a workload’s resource dependancies without having to worry by whom, when, and how it will be provisioned in the target environment.
 {{< /icon-paragraph >}}
 

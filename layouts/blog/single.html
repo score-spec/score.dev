@@ -3,9 +3,9 @@
     {{ partial "blog/header" . }}
     <div id="blog-post-content" class="max-w-3xl text-lg px-5 lg:px-0 my-16">
       {{ .Content | markdownify }}
-      <a class="flex group items-center gap-x-2 mt-8" href="/blog">
+      <a class="flex group items-center gap-x-2 mt-8" href="{{ site.BaseURL }}blog">
         <img 
-          src="/svg/arrow_forward_orange.svg" 
+          src="{{ site.BaseURL }}svg/arrow_forward_orange.svg" 
           alt="arrow"
           class="group-hover:-translate-x-2 transition-all rotate-180"
         >

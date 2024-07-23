@@ -1,17 +1,17 @@
 call_to_action:
   text: Star us on GitHub
-  icon: /svg/star_rate.svg
+  icon: svg/star_rate.svg
   url: https://github.com/score-spec/spec
 footer:
   cta:
     text: Configure once. Deploy anywhere. From local to prod.
     secondary_button:
       text: Get started
-      url: /get-started
+      url: get-started
   navigation:
     title: Join the community
     text: Share best practices around config mgmt and learn how others integrate Score in their delivery workflows.
     button:
       text: Join Slack
       url: https://join.slack.com/t/scorecommunity/shared_invite/zt-2ly2l3vpg-zQCCtiEsQ7Tp3PdEWY07rA
-      icon: /svg/slack.svg
+      icon: svg/slack.svg

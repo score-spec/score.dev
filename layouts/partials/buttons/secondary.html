@@ -1,15 +1,15 @@
-<a href="{{ .url }}" class="flex items-center border border-orange rounded-[14px] 
+<a href="{{ if not .external }}{{ site.BaseURL }}{{ end }}{{ .url }}" class="flex items-center border border-orange rounded-[14px] 
 py-3 pl-5 pr-6 hover:bg-primary hover:text-white hover:border-transparent 
 text-dark font-graphik font-medium text-lg w-fit"
 {{ with .external }} target="_blank" {{ end }}
 >
   {{ with .icon }}
-    <img src="{{ . }}" alt="Icon" class="mr-2">
+    <img src="{{ site.BaseURL }}{{ . }}" alt="Icon" class="mr-2">
   {{ end }}
   {{ .text }}
   {{ with .external }}
-    <img src="/svg/arrow_outward.svg" alt="Arrow outward" class="ml-2">
+    <img src="{{ site.BaseURL }}svg/arrow_outward.svg" alt="Arrow outward" class="ml-2">
   {{ else }}
-    <img src="/svg/arrow_forward.svg" alt="Arrow right" class="ml-2">
+    <img src="{{ site.BaseURL }}svg/arrow_forward.svg" alt="Arrow right" class="ml-2">
   {{ end }}
 </a>

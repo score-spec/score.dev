@@ -1,15 +1,15 @@
 title: Loved by developers
-image: /images/testimonials_bg.svg
+image: images/testimonials_bg.svg
 testimonials:
   - name: Marius Tolzmann
     role: CTO at Mineiros
-    image: /images/testimonials/63594cc2419abbb766c6b6e5_marius-tolzmann.png
+    image: images/testimonials/63594cc2419abbb766c6b6e5_marius-tolzmann.png
     text: I love the idea of being able to describe everything my workload needs in one file.
   - name: Min Kim
     role: Cloud Architect at Frontside Software
-    image: /images/testimonials/min-kim.png
+    image: images/testimonials/min-kim.png
     text: It's just so simple. Score allows to describe what a workloads needs to run and can be utilized throughout the entire development lifecycle.
   - name: Marius Raesener
     role: Tech Lead at BAUHAUS Deutschland
-    image: /images/testimonials/testi-item-image.png
+    image: images/testimonials/testi-item-image.png
     text: Running my first transform was such a fun “aha”-moment, it actually worked! I ran everything locally on Docker and pushed it to Kubernetes, really cool.

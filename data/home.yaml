@@ -3,7 +3,7 @@ hero:
   description: Score is a developer-centric and platform-agnostic workload specification. It ensures consistent configuration between local and remote environments. And it's open source.
   secondary_button:
     text: Get started
-    link: /get-started
+    link: get-started
 why_score:
   title: Why use Score?
   text: Score is loved by developers because they can run the same workload on completely different technology stacks, without needing to be an expert in any one of them.
@@ -11,42 +11,42 @@ why_score:
     - from:
         title: Cognitive load
         text: Developers are forced to become experts in a variety of tech and tools, just do deploy a simple change to their apps.
-        icon: /svg/icon-cognitive.svg
+        icon: svg/icon-cognitive.svg
       to:
         title: Features over Ops
         text: Score takes care of configs for developers so they can focus on shipping features instead of fighting with infrastructure.
-        icon: /svg/icon-checklist.svg
+        icon: svg/icon-checklist.svg
     - from:
         title: Config drift
         text: Multiple config rules, constructs and values across local and remote environments increase the risk of misconfiguration.
-        icon: /svg/icon-config-drift.svg
+        icon: svg/icon-config-drift.svg
       to:
         title: Local to prod
         text: With Score you can easily transition from local to to remote environments. Configs stay consistent, everywhere you deploy.
-        icon: /svg/icon-multiple_stop.svg
+        icon: svg/icon-multiple_stop.svg
     - from:
         title: YAML bloat
         text: Trying to keep many environment-specific config files in sync leads to repetitive configuration work and YAML bloat.
-        icon: /svg/icon-yaml-bloat.svg
+        icon: svg/icon-yaml-bloat.svg
       to:
         title: One file
         text: Score lets you use one specification file as the single source of truth, easily translatable across your delivery setup.
-        icon: /svg/icon-task.svg
+        icon: svg/icon-task.svg
 easily_integrates:
   title: Easily integrates in your existing workflows
   sections:
     - title: Extendable and customizable
       text: The <span class="highlight-code">score.yaml</span> file can be extended and customised according to your needs. The score spec leaves room for environment specific overrides as well as platform specific extensions that allow to list additional properties or requirements.
-      image: /images/home/6374bfdcaeb3b3355842b6bc_score-overrides-16nov22-p-500.png
+      image: images/home/6374bfdcaeb3b3355842b6bc_score-overrides-16nov22-p-500.png
     - title: Declarative by nature
       text: Score lets developers define the resources required by their workloads in a declarative way. You declare once that your workload needs to listen on a port to receive requests - and don’t not need to worry where and how the exact port is defined in e.g. a remote Kubernetes environment. By declaring what the workload needs to run, the “how” becomes an environment specific implementation detail that is taken care of by Score.
-      image: /images/home/635a8680ee487067a410b7e8_declarative-by-nature-score-p-800.png
+      image: images/home/635a8680ee487067a410b7e8_declarative-by-nature-score-p-800.png
     - title: Seamless tech stack and workflow integration
       text: Score introduces a single change to your setup by adding a <span class="highlight-code">score.yaml</span> file to your workloads’ repo. Everything else stays as is. Once Score is set up, you can continue using it even if the underlying tech stack changes.
-      image: /images/home/667d6c310c1a8dc606c3321d_seamless-yaml-score-docker-kubernetes-p-800.png
+      image: images/home/667d6c310c1a8dc606c3321d_seamless-yaml-score-docker-kubernetes-p-800.png
 single_spec:
   title: A single spec to rule them all
-  image: /images/home/667d6bd96a95417611bc96f5_score-yaml-docker-kubernetes-p-1600.png
+  image: images/home/667d6bd96a95417611bc96f5_score-yaml-docker-kubernetes-p-1600.png
 how_score_works:
   title: How Score works
   steps:

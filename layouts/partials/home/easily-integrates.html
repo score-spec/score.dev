@@ -1,7 +1,7 @@
 {{ with site.Data.home.easily_integrates }}
   <section 
     class="bg-dark py-32 px-5 lg:px-0 bg-top bg-no-repeat" 
-    style="background-image: url('/images/home/top_glow.svg');"
+    style="background-image: url('{{ site.BaseURL }}images/home/top_glow.svg');"
   >
     <h2 class="text-white text-center text-4xl lg:text-5xl font-medium">{{ .title }}</h2>
     <div class="container mt-40">

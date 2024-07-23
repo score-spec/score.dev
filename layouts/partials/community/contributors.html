@@ -4,7 +4,7 @@
       <div class="container mt-20 grid grid-cols-2 lg:grid-cols-4 gap-14">
         {{ range .contributors }}
           <div class="flex flex-col items-center">
-            <img src="{{ .image }}" alt="{{ .name }}" class="max-w-40">
+            <img src="{{ site.BaseURL }}{{ .image }}" alt="{{ .name }}" class="max-w-40">
             <h3 class="text-white font-medium text-lg lg:text-2xl">{{ .name }}</h3>
           </div>
         {{ end }}

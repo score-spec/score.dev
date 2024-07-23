@@ -1,7 +1,7 @@
 {{ $current := .Page.RelPermalink }}
 <nav class="container flex justify-between my-4 items-center">
-  <a href="/">
-    <img src="/images/logo.svg" alt="{{ site.Params.title }} logo" class="max-w-[120px] lg:max-w-full">
+  <a href={{ site.BaseURL }}>
+    <img src="{{ site.BaseURL }}images/logo.svg" alt="{{ site.Params.title }} logo" class="max-w-[120px] lg:max-w-full">
   </a>
   <div class="hidden lg:flex gap-x-8 items-center">
     {{ range site.Menus.main }}
@@ -22,7 +22,7 @@
       class="px-2"
       id="toggleDrawer"
     >
-      <img src="/svg/menu.svg" alt="menu" class="w-5 h-5 -translate-y-1">
+      <img src="{{ site.BaseURL }}svg/menu.svg" alt="menu" class="w-5 h-5 -translate-y-1">
     </button>
   </div>
   {{ partial "header/drawer" . }}

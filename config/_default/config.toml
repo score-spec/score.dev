@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://localhost:1313/score.dev"
 title = "Score"
 canonifyURLs = false
 disableAliases = false

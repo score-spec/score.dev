@@ -1,4 +1,6 @@
-# Score
+# score.dev
+
+This repo holds the source of the <https://score.dev> website which holds the Score landing page, blog, and associated content. This is compiled through the Hugo static page compiler and uploaded as static pages to Github Pages.
 
 ## Requirements
 
@@ -10,19 +12,19 @@
 Download the repo.
 
 ```bash
-git clone https://github.com/humanitec/developers-docs.git
+git clone https://github.com/score-spec/score.dev.git
 ```
 
 ### 2. Install dependencies
 
 ```bash
-npm install
+npm ci
 ```
 
 ### 4. Start development server
 
 ```bash
-npm run stage
+node_modules/.bin/hugo/hugo serve
 ```
 
 While the running server blocks your terminal, it is recommended to use it like that to see live log output. Just open another terminal to continue.

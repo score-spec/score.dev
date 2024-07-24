@@ -1,4 +1,6 @@
 # Score
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fscore-spec%2Fscore.dev.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fscore-spec%2Fscore.dev?ref=badge_shield)
+
 
 ## Requirements
 
@@ -34,3 +36,7 @@ The server will observe the local file system and dynamically rebuild the site o
 ## Documentation
 
 - [Hugo](https://gohugo.io/documentation/)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fscore-spec%2Fscore.dev.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fscore-spec%2Fscore.dev?ref=badge_large)

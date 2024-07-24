@@ -35,7 +35,7 @@ jobs:
         run: |
           node_modules/.bin/hugo/hugo \
             --minify \
-            --environment staging \
+            --environment production \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -96,8 +96,9 @@
     @apply text-gradient hover:text-primary hover:underline hover:bg-none;
   }
 
+  #blog-post-content h1,
   #blog-post-content h2 {
-    @apply text-black mb-8;
+    @apply text-black mb-6;
   }
 
   #blog-post-content h3 {
@@ -119,7 +120,7 @@
   }
 
   #blog-post-content li {
-    @apply text-black text-base lg:text-lg;
+    @apply text-black text-base lg:text-lg font-graphik;
   }
 
   #blog-post-content code:not(pre code) {

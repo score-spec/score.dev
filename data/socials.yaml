@@ -2,8 +2,8 @@
   icon: /images/socials/slack.png
   text: Share best practices around config mgmt and learn how others integrate Score in their delivery workflows.
   link:
-    url: https://join.slack.com/t/scorecommunity/shared_invite/zt-2ly2l3vpg-zQCCtiEsQ7Tp3PdEWY07rA
-    text: Join us on Slack
+    url: https://slack.cncf.io
+    text: Join *#score* on CNCF Slack
 - name: Twitter
   icon: /images/socials/twitter.png
   text: Follow us on Twitter for roadmap updates and live discussions with contributors and community members.

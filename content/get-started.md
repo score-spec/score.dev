@@ -18,7 +18,7 @@ Score is community driven. New contributors are welcome and highly encouraged.
 
 {{< icon-link text="Give our project a star" icon="svg/star_gradient.svg" url="https://github.com/score-spec/spec" >}}
 
-{{< icon-link text="Join us on Slack" icon="svg/slack_logo.svg" url="https://join.slack.com/t/scorecommunity/shared_invite/zt-1i2glkqkl-EnjSWSCgYUyaEGwmDYBZZQ" >}}
+{{< icon-link text="Join #score on the CNCF Slack" icon="svg/slack_logo.svg" url="https://slack.cncf.io/" >}}
 
 **Contact us**
 

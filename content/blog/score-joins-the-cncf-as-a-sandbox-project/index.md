@@ -23,6 +23,6 @@ The potential to integrate and collaborate with other platforms and tools within
 
 If we’ve sparked your interest and you’d be curious about working on an implementation for Score, don’t hesitate to reach out - we’d love to make this a reality! We welcome contributors from both new organisations and individual contributors.
 
-For more information about Score and our participation in the CNCF, please visit [Score on GitHub](https://github.com/score-spec/spec) and join the [community on Slack](https://scorecommunity.slack.com/join/shared_invite/zt-2ly2l3vpg-zQCCtiEsQ7Tp3PdEWY07rA#/shared-invite/email).
+For more information about Score and our participation in the CNCF, please visit [Score on GitHub](https://github.com/score-spec/spec) and join the [#score channel on the CNCF Slack](https://slack.cncf.io).
 
 Thank you for reading and being a part of our journey! ❤️

@@ -12,6 +12,6 @@ footer:
     title: Join the community
     text: Share best practices around config mgmt and learn how others integrate Score in their delivery workflows.
     button:
-      text: Join Slack
-      url: https://join.slack.com/t/scorecommunity/shared_invite/zt-2ly2l3vpg-zQCCtiEsQ7Tp3PdEWY07rA
+      text: Join Score on the CNCF Slack
+      url: https://slack.cncf.io
       icon: svg/slack.svg

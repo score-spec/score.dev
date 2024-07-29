@@ -64,4 +64,4 @@ Check out our current suite of available CLI tools [here](https://github.com/sco
 
 Score wants to make developers lives easier by allowing them focus on developing features instead of fighting with infrastructure. It simplifies the promotion of workloads from local to remote development environments by automating repetitive configuration work.
 
-We’re curious to hear: What experienced did you make working with complex microservice applications? Do you have an idea on how to improve the Score specification? Or would you like to support us in building the next generation of Score implementations? Get involved [here](https://github.com/score-spec/spec#-get-involved) and join the [#score channel](https://slack.cncf.io)!
+We’re curious to hear: What experienced did you make working with complex microservice applications? Do you have an idea on how to improve the Score specification? Or would you like to support us in building the next generation of Score implementations? Get involved [here](https://github.com/score-spec/spec#-get-involved) and join the [#score channel on the CNCF Slack](https://slack.cncf.io)!

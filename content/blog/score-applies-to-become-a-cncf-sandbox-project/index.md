@@ -38,4 +38,4 @@ On 23rd January 2024 we joined the [TAG App Delivery's WG Platforms](https://tag
 
 You can now [watch the recording](https://www.youtube.com/watch?v=P6otOxdOKDk&t=1260s) of the meeting and [access the slides](https://docs.google.com/presentation/d/1O8m2O1WAdUQU6-wcJiwBTiO24J6PBGob3Rqc31DOZEM/edit?usp=sharing) we presented. Additionally, you can [view the list of questions](https://docs.google.com/document/d/1UXJQFFYZOXaVNQVpD2wZcd5maYWIfrMvfeM1NbqOmVA/edit?usp=sharing) that were raised.
 
-The meeting sparked several follow-up discussions and engagements. If you have any further questions or would like to discuss anything related to Score, feel free to reach out to us on the [CNCF Slack channel](https://cloud-native.slack.com/?redir=%2Fmessages%2FCHY2THYUU) or our [Slack workspace](https://join.slack.com/t/scorecommunity/shared_invite/zt-2a0x563j7-i1vZOK2Yg2o4TwCM1irIuA).
+The meeting sparked several follow-up discussions and engagements. If you have any further questions or would like to discuss anything related to Score, feel free to reach out to us in the [#score channel on the CNCF Slack](https://slack.cncf.io).

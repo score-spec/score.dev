@@ -32,7 +32,7 @@ We discussed Score and our vision for workload-centric development in front of a
 * December 14: Score at [Cloud Native Live](https://www.youtube.com/watch?v=2EJ3irXaXYA&t=1093s)
 * December 21: We [trended on GitHub](https://twitter.com/_sujaya/status/1605568500571021312?s=20&t=SQb6ZjGTpWF0_9xBH7uNWA) for the first time
 
-If you’re interested in joining our upcoming events, keep an eye out on our [blog](https://score.dev/blog) and [community Slack](https://app.slack.com/client/T047EJ0JB3K) for updates.
+If you’re interested in joining our upcoming events, keep an eye out on our [blog](https://score.dev/blog) and the [#score channel on the CNCF Slack](https://slack.cncf.io) for updates.
 
 ### Community discussions
 
@@ -42,7 +42,7 @@ The future of Score depends on community input. We were excited to engage in fir
 * [What is the difference between Score and OAM (Kubevela)?](https://github.com/score-spec/spec/issues/23)
 * [How is Score different from other tools?](https://score.dev/blog/how-is-score-different-from-other-tools)
 
-You’ll find further discussion threads in our [community Slack](https://app.slack.com/client/T047EJ0JB3K). We’re looking forward to keeping the conversation going in 2023.
+You’ll find further discussion threads in the [#score channel on the CNCF Slack](https://slack.cncf.io). We’re looking forward to keeping the conversation going in 2023.
 
 ### Feature requests
 
@@ -69,7 +69,7 @@ Curious to explore one of these topics in more detail but aren’t sure where or
 
 All contributions are welcome. Playing around with the tool and providing feedback, engaging in discussions or simply sharing your questions with us is a huge help. If you’re interested in testing or adopting Score with your team we’re open to supporting you with the onboarding and integration of the tool.
 
-We’re excited to move things forward together with you and the rest of the community in 2023. It’ll be great to see where we’ll stand at the end of this quarter and year. If there’s something you’d like to discuss, drop in during our weekly office hours on Slack every Monday between 4 and 5pm CET. See you there!
+We’re excited to move things forward together with you and the rest of the community in 2023. It’ll be great to see where we’ll stand at the end of this quarter and year. If there’s something you’d like to discuss, drop in during our [monthly community meetings](https://github.com/score-spec/spec?tab=readme-ov-file#-get-in-touch). See you there!
 
 Happy 2023!
 

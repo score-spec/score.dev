@@ -15,4 +15,4 @@ Keep an eye out on our blog and [socials](https://www.linkedin.com/company/score
 
 Thank you so much for your continued support and contribution – Score would not be possible without your involvement and your questions! 
 
-Happy new year by the Score Team! Keep up with us on [Slack](https://join.slack.com/t/scorecommunity/shared_invite/zt-1i2glkqkl-EnjSWSCgYUyaEGwmDYBZZQ), [GitHub](https://github.com/score-spec/spec/discussions) and on [our socials](https://www.linkedin.com/company/score-dev/).
+Happy new year by the Score Team! Keep up with us in the [#score channel on the CNCF Slack](https://slack.cncf.io), [GitHub](https://github.com/score-spec/spec/discussions) and on [our socials](https://www.linkedin.com/company/score-dev/).

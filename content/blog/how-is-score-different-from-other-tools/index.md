@@ -54,4 +54,4 @@ The [Open Application Model (OAM)](https://oam.dev/) and Score share a similar p
 
 We’re currently working on a blog article that explores the tools differences in more detail to help you understand which one is more suitable for your use case. Watch the [Score Blog](https://score.dev/blog) for updates.
 
-We hope this was helpful and answered your questions! If you would like to comment on any of the above named items or suggest a tool you’d like us to explore in comparison to Score, let us know via our [community Slack](https://join.slack.com/t/scorecommunity/shared_invite/zt-1i2glkqkl-EnjSWSCgYUyaEGwmDYBZZQ) or create a topic in our recently launched [discussion forum](https://github.com/score-spec/spec/discussions).
+We hope this was helpful and answered your questions! If you would like to comment on any of the above named items or suggest a tool you’d like us to explore in comparison to Score, let us know in the [#score channel on the CNCF Slack](https://slack.cncf.io) or create a topic in our recently launched [discussion forum](https://github.com/score-spec/spec/discussions).

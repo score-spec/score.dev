@@ -7,7 +7,7 @@ image: 66607b6971de0ff6bd8063eb_ScoreFaq-p-800.png
 author: susa-tunker
 ---
 
-Our community is growing and so is the amount of questions we receive! A huge thank you to everyone who dropped questions in our [Slack](https://join.slack.com/t/scorecommunity/shared_invite/zt-1i2glkqkl-EnjSWSCgYUyaEGwmDYBZZQ), contributed to our [GitHub discussions](https://github.com/score-spec/spec/discussions) and raised [GitHub issues](https://github.com/score-spec/spec/issues) in the last few months. We’re excited to keep the discussion going and encourage everyone to keep asking questions and sharing your ideas with us. 🚀 In this article, we’re tackling the biggest questions raised so far. Let’s dive in.
+Our community is growing and so is the amount of questions we receive! A huge thank you to everyone who dropped questions in the [#score channel on the CNCF Slack](https://slack.cncf.io), contributed to our [GitHub discussions](https://github.com/score-spec/spec/discussions) and raised [GitHub issues](https://github.com/score-spec/spec/issues) in the last few months. We’re excited to keep the discussion going and encourage everyone to keep asking questions and sharing your ideas with us. 🚀 In this article, we’re tackling the biggest questions raised so far. Let’s dive in.
 
 ## What is Score?
 
@@ -64,4 +64,4 @@ From our experience, this is often the case in medium-sized and larger developme
 
 One of the main pain points that Score solves is configuration mismatch between environments that run on different platforms. For example: You might run Docker Compose locally while deploying to a Kubernetes based development environment. A Score  Implementation CLI allows you to translate your Score file into all kinds of configuration formats (Docker Compose, Helm, Kustomize, ECS etc.) and thereby ensure consistent configuration. In a single platform set up this translation element won’t come into effect. Whether adopting Score makes sense for you anyway depends on your teams set up. If you’re running into config bottlenecks and are wanting to abstract away the complexity of platforms such as Kubernetes from developers, Score might be worth investigating - at the very least as a source of inspiration for your team.
 
-In this article we looked at a set of questions related to Score, its capabilities, use cases and adoption. Is there anything we missed? Do you have a follow up question? Ping us anytime on [Slack](https://join.slack.com/t/scorecommunity/shared_invite/zt-1i2glkqkl-EnjSWSCgYUyaEGwmDYBZZQ) or [GitHub](https://github.com/score-spec/spec/discussions) and we’ll get back to you. 
+In this article we looked at a set of questions related to Score, its capabilities, use cases and adoption. Is there anything we missed? Do you have a follow up question? Ping us anytime in the [#score channel on the CNCF Slack](https://slack.cncf.io) or [GitHub](https://github.com/score-spec/spec/discussions) and we’ll get back to you. 

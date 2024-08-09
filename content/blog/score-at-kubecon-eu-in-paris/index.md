@@ -74,4 +74,4 @@ If you're attending KubeCon this year, don't hesitate to stop by our booth D35 i
 
 À bientôt à KubeCon Paris!
 
-PS: If you aren’t attending KubeCon this year, we’ll be available in our [Slack community](https://join.slack.com/t/scorecommunity/shared_invite/zt-2a0x563j7-i1vZOK2Yg2o4TwCM1irIuA) to answer any questions. We are always open to chatting during our office hours (every Thursday, 3-4 pm CET).
+PS: If you aren’t attending KubeCon this year, we’ll be available in the [#score channel on the CNCF Slack](https://slack.cncf.io) to answer any questions. We are always open to chatting during our [monthly community meeting](https://github.com/score-spec/spec?tab=readme-ov-file#-get-in-touch).

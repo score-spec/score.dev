@@ -11,6 +11,6 @@ Folks, we are extremely happy to announce that as of today, one week after launc
 
 First, we would like to extend our gratitude to the fantastic open-source community and developers who have been of great help in giving us feedback early on and sharing the repositories with their peers. 
 
-Our [Slack channel](https://score.dev/slack-rd) is growing and we can’t wait now for our first community meeting: you can find all the relevant information in the #general channel!
+The [#score channel on the CNCF Slack](https://slack.cncf.io) is growing and we can’t wait for our first community meeting: you can find all the relevant information in the #score channel!
 
 To check what’s ahead of us, consult our [roadmap](https://github.com/score-spec/spec/blob/main/roadmap.md) and join our Slack channel, and don’t forget: comments, questions and any sort of feedback is greatly appreciated and can be sent directly to [team@score.dev](mailto:team@score.dev).

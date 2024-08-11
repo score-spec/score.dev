@@ -13,6 +13,7 @@ On December 13, at 7 PM CET, two Score's main contributors and maintainers, Susa
 
 The conversation will last around 30 minutes and there will be space for community questions and feedback. 
 
-Thank you to the Platform Engineering community for hosting this discussion. Please, register at [this link](https://www.linkedin.com/events/oneyamltorulethemall-andprevent7000492721220030464/about/) to participate in the discussion on Zoom, the recording will be shared a day later both on [GitHub Discussions](https://github.com/score-spec/spec/discussions) and on the community Slack channel.
+Thank you to the Platform Engineering community for hosting this discussion. Please, register at [this link](https://www.linkedin.com/events/oneyamltorulethemall-andprevent7000492721220030464/about/) to participate in the discussion on Zoom, the recording will be shared a day later both on [GitHub Discussions](https://github.com/score-spec/spec/discussions) and in the [#score channel on the CNCF Slack](https://slack.cncf.io).
 
 Community active participation is strongly encouraged! See you there!
+

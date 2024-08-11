@@ -13,6 +13,6 @@ We are ecstatic that so many eyes are on our project so early on. This indicates
 
 Score is still a work in progress. We are excited for the work we will be doing in the next months and years to come.
 
-If you want to join the Score community, [connect with us on Slack](https://score.dev/slack-rd)!
+If you want to join the Score community, join the [#score channel on the CNCF Slack](https://slack.cncf.io).
 
 Thanks again, and see you really soon!

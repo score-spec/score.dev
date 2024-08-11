@@ -37,7 +37,7 @@ We REALLY value your feedback and insights. It’s what shapes how we improve an
 
 - [Complete a survey](https://docs.google.com/forms/d/e/1FAIpQLSdaik3q4NerxbTDa7lRZiGw-B5INBWURsWXvwitf5wRM-qqyw/viewform?usp=sharing)
 
-- [Send us a Slack](https://join.slack.com/t/scorecommunity/shared_invite/zt-1i2glkqkl-EnjSWSCgYUyaEGwmDYBZZQ)
+- Ping us in the [#score channel on the CNCF Slack](https://slack.cncf.io)
 
 We can’t wait to hear from you! So please join our harmony and help make Project Melody a success! 🎵🎶
 

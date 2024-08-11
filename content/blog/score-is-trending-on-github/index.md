@@ -19,7 +19,7 @@ Quite an exciting way to end 2022!
 
 What’s coming next? We are expanding our opportunities to meet contributors at events, with quite a busy schedule in 2023 and also pushing further in our community effort to share the [roadmap](https://github.com/score-spec/spec/blob/main/roadmap.md) and vision with everyone who would like to participate in the Score journey.
 
-Thank you for your continuous support, let’s chat more on [Slack]((https://join.slack.com/t/scorecommunity/shared_invite/zt-1i2glkqkl-EnjSWSCgYUyaEGwmDYBZZQ)) or on the [discussion](https://github.com/score-spec/spec/discussions) tab on GitHub!
+Thank you for your continuous support, let’s chat more in the [#score channel on the CNCF Slack](https://slack.cncf.io) or on the [discussion](https://github.com/score-spec/spec/discussions) tab on GitHub!
 
 > ## The team behind Score
 > The idea for Score organically formed from looking at hundreds of delivery setups, across engineering orgs of all sizes (from startups to Fortune 100). We have all been involved in platform engineering and developer tooling for the past decade, in one way or another.Some of us built Internal Developer Platforms at the likes of Google, Apple or IBM, some come from the IaC side of things and played leading roles at companies like Hashicorp. <br><br>

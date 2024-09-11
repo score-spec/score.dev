@@ -50,7 +50,7 @@ single_spec:
 how_score_works:
   title: How Score works
   steps:
-    - title: "Create a <code class='how-it-works-title-code'>score.yaml</code> file for the application"
+    - title: "Create a <code class='how-it-works-title-code'>score.yaml</code> file for your workload"
       code:
         type: single
         content: |

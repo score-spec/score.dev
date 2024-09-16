@@ -61,10 +61,10 @@ how_score_works:
             name: service-a
 
           service:
-          ports:
-            www:
-              port: 8000
-              targetPort: 80
+            ports:
+              www:
+                port: 8000
+                targetPort: 80
 
           containers:
             container-id:

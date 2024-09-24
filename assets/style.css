@@ -970,6 +970,78 @@ code,
   top: auto;
 }
 
+.bottom-\[-10px\] {
+  bottom: -10px;
+}
+
+.bottom-\[-30\%\] {
+  bottom: -30%;
+}
+
+.top-\[10px\] {
+  top: 10px;
+}
+
+.-bottom-\[30\%\] {
+  bottom: -30%;
+}
+
+.-bottom-\[10\%\] {
+  bottom: -10%;
+}
+
+.-bottom-\[0\%\] {
+  bottom: -0%;
+}
+
+.bottom-\[10\%\] {
+  bottom: 10%;
+}
+
+.bottom-\[10px\] {
+  bottom: 10px;
+}
+
+.bottom-\[20px\] {
+  bottom: 20px;
+}
+
+.-bottom-\[10px\] {
+  bottom: -10px;
+}
+
+.-bottom-\[50px\] {
+  bottom: -50px;
+}
+
+.-bottom-\[80px\] {
+  bottom: -80px;
+}
+
+.-bottom-\[40px\] {
+  bottom: -40px;
+}
+
+.-bottom-\[30px\] {
+  bottom: -30px;
+}
+
+.-bottom-\[25px\] {
+  bottom: -25px;
+}
+
+.-bottom-\[70px\] {
+  bottom: -70px;
+}
+
+.-bottom-\[100px\] {
+  bottom: -100px;
+}
+
+.-bottom-\[120px\] {
+  bottom: -120px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1896,6 +1968,18 @@ code,
 }
 
 @media (min-width: 1024px) {
+  .lg\:-bottom-\[120px\] {
+    bottom: -120px;
+  }
+
+  .lg\:-bottom-\[70px\] {
+    bottom: -70px;
+  }
+
+  .lg\:top-auto {
+    top: auto;
+  }
+
   .lg\:mr-6 {
     margin-right: 1.5rem;
   }

@@ -922,16 +922,16 @@ code,
   inset: 0px;
 }
 
-.-bottom-\[20\%\] {
-  bottom: -20%;
+.-bottom-\[30\%\] {
+  bottom: -30%;
+}
+
+.-bottom-\[30px\] {
+  bottom: -30px;
 }
 
 .-top-5 {
   top: -1.25rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
 }
 
 .left-0 {
@@ -962,84 +962,24 @@ code,
   top: 0px;
 }
 
-.top-\[1px\] {
-  top: 1px;
-}
-
 .top-auto {
   top: auto;
 }
 
-.bottom-\[-10px\] {
-  bottom: -10px;
+.left-\[10\%\] {
+  left: 10%;
 }
 
-.bottom-\[-30\%\] {
-  bottom: -30%;
+.left-\[11\%\] {
+  left: 11%;
 }
 
-.top-\[10px\] {
-  top: 10px;
+.left-\[12\%\] {
+  left: 12%;
 }
 
-.-bottom-\[30\%\] {
-  bottom: -30%;
-}
-
-.-bottom-\[10\%\] {
-  bottom: -10%;
-}
-
-.-bottom-\[0\%\] {
-  bottom: -0%;
-}
-
-.bottom-\[10\%\] {
-  bottom: 10%;
-}
-
-.bottom-\[10px\] {
-  bottom: 10px;
-}
-
-.bottom-\[20px\] {
-  bottom: 20px;
-}
-
-.-bottom-\[10px\] {
-  bottom: -10px;
-}
-
-.-bottom-\[50px\] {
-  bottom: -50px;
-}
-
-.-bottom-\[80px\] {
-  bottom: -80px;
-}
-
-.-bottom-\[40px\] {
-  bottom: -40px;
-}
-
-.-bottom-\[30px\] {
-  bottom: -30px;
-}
-
-.-bottom-\[25px\] {
-  bottom: -25px;
-}
-
-.-bottom-\[70px\] {
-  bottom: -70px;
-}
-
-.-bottom-\[100px\] {
-  bottom: -100px;
-}
-
-.-bottom-\[120px\] {
-  bottom: -120px;
+.-top-4 {
+  top: -1rem;
 }
 
 .z-0 {
@@ -1295,6 +1235,10 @@ code,
 
 .w-full {
   width: 100%;
+}
+
+.w-\[32rem\] {
+  width: 32rem;
 }
 
 .max-w-2xl {
@@ -1974,10 +1918,6 @@ code,
 
   .lg\:-bottom-\[70px\] {
     bottom: -70px;
-  }
-
-  .lg\:top-auto {
-    top: auto;
   }
 
   .lg\:mr-6 {

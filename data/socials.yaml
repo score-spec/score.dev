@@ -4,15 +4,3 @@
   link:
     url: https://slack.cncf.io
     text: Join "#score" on the CNCF Slack
-- name: Twitter
-  icon: /images/socials/twitter.png
-  text: Follow us on Twitter for roadmap updates and live discussions with contributors and community members.
-  link:
-    url: https://twitter.com/score_dev?s=21&t=WMiZwDJFfOf6Hzb9BvLQCg
-    text: Follow us on Twitter
-- name: LinkedIn
-  icon: /images/socials/linkedin.png
-  text: Follow us on LinkedIn for roadmap updates and live discussions with contributors and community members.
-  link:
-    url: https://www.linkedin.com/company/score-dev/
-    text: Connect on LinkedIn

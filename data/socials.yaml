@@ -1,6 +1,12 @@
+- name: GitHub
+  icon: /images/socials/github.png
+  text: Find your way to contribute to Score.
+  link:
+    url: https://github.com/score-spec
+    text: Explore Score in GitHub
 - name: Slack
   icon: /images/socials/slack.png
-  text: Share best practices around config mgmt and learn how others integrate Score in their delivery workflows.
+  text: Connect with Score contributors and community members.
   link:
     url: https://slack.cncf.io
     text: Join "#score" on the CNCF Slack

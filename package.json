@@ -28,12 +28,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "auto-changelog": "^2.4",
-    "concurrently": "^8.2.2",
+    "auto-changelog": "^2.5",
+    "concurrently": "^9.0.1",
     "exec-bin": "^1.0.0",
     "hugo-installer": ">=4.0.1",
     "shx": "^0.3.4",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.4.14"
   },
   "otherDependencies": {
     "hugo": "0.125.4"

@@ -18,7 +18,7 @@ As a [CNCF Sandbox project](https://www.cncf.io/projects/score/), Score is thril
 
 In addition to **`score-compose`** and **`score-k8s`**, do you want to write your own Score implementation? We got you covered with this recent addition of the [Score Sample implementation project](https://github.com/score-spec/score-implementation-samplehttps://github.com/score-spec/score-implementation-sample) that you can use as a template to get started!
 
-https://score.devstats.cncf.io/d/52/new-contributors-table?orgId=1These improvements align with Score’s mission to streamline the application lifecycle and optimize the cloud-native experience. Check out the detailed release notes on GitHub: [**`score-compose`**](https://github.com/score-spec/score-compose) and [**`score-k8s`**](https://github.com/score-spec/score-k8s) for more on each update.
+These improvements align with Score’s mission to streamline the application lifecycle and optimize the cloud-native experience. Check out the detailed release notes on GitHub: [**`score-compose`**](https://github.com/score-spec/score-compose) and [**`score-k8s`**](https://github.com/score-spec/score-k8s) for more on each update.
 
 ## Recognition in Thoughtworks Technology Radar
 

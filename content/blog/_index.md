@@ -1,4 +1,4 @@
 ---
 title: Blog
-featured_post: score-joins-the-cncf-as-a-sandbox-project
+featured_post: score-at-kubecon-na-in-slc
 ---

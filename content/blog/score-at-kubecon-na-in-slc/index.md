@@ -12,8 +12,7 @@ As a [CNCF Sandbox project](https://www.cncf.io/projects/score/), Score is thril
 
 [Since becoming a CNCF Sandbox project](https://score.dev/blog/score-joins-the-cncf-as-a-sandbox-project/), the Score community has been hard at work introducing new functionalities and improvements across our core tools such as, **`score-go`**, **`score-compose`** and **`score-k8s`**. Here’s a summary of some of the standout updates:
 - Import external provisioners files (git, http(s) and OCI image) with the new `--provisioners` flag for both **`score-compose`** and **`score-k8s`**. This makes it easy to author and share Score provisioning templates amongst your teams.
-
-- Alongside some improvements with latest container images versions and stronger security context enforcement in some provisioners, new resource types were added in the default provisioners: `mssql`, `amqp`, `mongodb`. See the complete list [here](https://docs.score.dev/docs/score-implementation/score-compose/resources-provisioners/) and [here](https://docs.score.dev/docs/score-implementation/score-k8s/resources-provisioners/). Do you want to write your own provisioners, check out our [blog post showing you how to write your own provisioner](https://score.dev/blog/writing-a-custom-score-compose-provisioner-for-apache-kafka/).
+- Alongside some improvements with latest container images versions and stronger security context enforcement in some provisioners, new resource types were added in the default provisioners: `mssql`, `amqp`, `mongodb`. See the complete list [here](https://docs.score.dev/docs/score-implementation/score-compose/resources-provisioners/) and [here](https://docs.score.dev/docs/score-implementation/score-k8s/resources-provisioners/). Do you want to write your own provisioners? Check out our [blog post showing you how to write your own provisioner](https://score.dev/blog/writing-a-custom-score-compose-provisioner-for-apache-kafka/)!
 - Based on the feedback from end users, **`score-compose`** got more updates like subpath support for Docker Volumes, improvement of healthcheck retries, better dependency handling `--depends-on` and the new `--publish port` option.
 - More consistency between the two projects: **`score-compose`** and **`score-k8s`**: CLI commands validation enhancements, more content in [docs.score.dev](https://docs.score.dev/) and improvements in CI tests to embrace more contributions.
 
@@ -31,7 +30,7 @@ Our community’s contributions are the heartbeat of Score’s development. In j
 
 Here are some of the incredible achievements from our new contributors that are helping to drive Score forward.
 
-- The [new OCI image import support for provisioners](https://github.com/score-spec/score-compose/issues/178) implemented in **`score-go`** ([score-go#48](https://github.com/score-spec/score-go/pull/48) and [score-go#59](https://github.com/score-spec/score-go/pull/59)), is now available in both **`score-compose`** and **`score-k8s`**. This allows to import complementary provisioners in addition to the default ones with the init command:
+- The [new OCI image import support for provisioners](https://github.com/score-spec/score-compose/issues/178) implemented in **`score-go`** ([score-go#48](https://github.com/score-spec/score-go/pull/48) and [score-go#59](https://github.com/score-spec/score-go/pull/59)), is now available in both **`score-compose`** and **`score-k8s`**. This allows to import complementary provisioners in addition to the default ones with the `init` command:
 
 {{< highlight yaml >}}
 score-compose init --provisioners oci://ghcr.io/score-spec/score-compose-community-provisioners:v0.1.0#00-redis-dapr-state-store.provisioners.yaml

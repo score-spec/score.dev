@@ -1,6 +1,6 @@
 ---
 title: Score at KubeCon NA 2024 in Salt Lake City
-date: 2024-11-06T00:00:00-00:00
+date: 2024-11-04T00:00:00-00:00
 draft: false
 description: Explore Score's recent updates, industry recognitions, and top community contributions. Join us at KubeCon NA in Salt Lake City to see what’s new and meet the Score team!
 image: score-at-kubecon-na-in-slc.jpg

@@ -3,7 +3,7 @@ title: Score at KubeCon NA 2024 in Salt Lake City
 date: 2024-11-04T00:00:00-00:00
 draft: false
 description: Explore Score's recent updates, industry recognitions, and top community contributions. Join us at KubeCon NA in Salt Lake City to see what’s new and meet the Score team!
-image: score-at-kubecon-na-in-slc.jpg
+image: score-at-kubecon-na-in-slc.png
 author: mathieu-benoit
 ---
 As a [CNCF Sandbox project](https://www.cncf.io/projects/score/), Score is thrilled to join KubeCon North America 2024 in Salt Lake City. This year’s updates and community achievements mark an exciting milestone, and we’re eager to connect with the cloud-native community to showcase how Score is evolving. Here’s everything you can expect from Score at this year’s KubeCon NA!
@@ -17,7 +17,7 @@ As a [CNCF Sandbox project](https://www.cncf.io/projects/score/), Score is thril
 - Based on the feedback from end users, **`score-compose`** got more updates like subpath support for Docker Volumes, improvement of healthcheck retries, better dependency handling `--depends-on` and the new `--publish port` option.
 - More consistency between the two projects: **`score-compose`** and **`score-k8s`**: CLI commands validation enhancements, more content in [docs.score.dev](https://docs.score.dev/) and improvements in CI tests to embrace more contributions.
 
-In addition to **`score-compose`** and **`score-k8s`**, do you want to write your own Score implementation? We got you covered with this recent addition of the [Score Sample implementation project](https://github.com/score-spec/score-implementation-samplehttps://github.com/score-spec/score-implementation-sample) that you can use as a template to get started!
+In addition to **`score-compose`** and **`score-k8s`**, do you want to write your own Score implementation? We got you covered with this recent addition of the [Score Sample implementation project](https://github.com/score-spec/score-implementation-sample) that you can use as a template to get started!
 
 These improvements align with Score’s mission to streamline the application lifecycle and optimize the cloud-native experience. Check out the detailed release notes on GitHub: [**`score-compose`**](https://github.com/score-spec/score-compose) and [**`score-k8s`**](https://github.com/score-spec/score-k8s) for more on each update.
 

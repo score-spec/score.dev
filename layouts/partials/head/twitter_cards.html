@@ -3,22 +3,27 @@
 <meta name="twitter:creator" content="{{ .Site.Params.twitterCreator }}">
 <meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{ .Description }}">
-{{ with $.Params.images -}}
-  <meta name="twitter:image" content="{{ $.Permalink }}{{ index . 0 }}">
-{{ else -}}
-  {{ $images := $.Resources.ByType "image" -}}
-  {{ $featured := $images.GetMatch "*feature*" -}}
-  {{ if not $featured -}}
-    {{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" -}}
-  {{ end -}}
-  {{ with $featured -}}
-    <meta name="twitter:image" content="{{ $featured.Permalink }}">
+{{ with .Params.image }}
+  <meta name="twitter:image" content="{{ $.Permalink }}{{ . }}">
+{{ else }}
+  {{ with $.Params.images -}}
+    <meta name="twitter:image" content="{{ $.Permalink }}{{ index . 0 }}">
   {{ else -}}
-    {{ with $.Site.Params.images -}}
-      <meta name="twitter:image" content="{{ index . 0 | absURL }}">
+    {{ $images := $.Resources.ByType "image" -}}
+    {{ $featured := $images.GetMatch "*feature*" -}}
+    {{ if not $featured -}}
+      {{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" -}}
+    {{ end -}}
+    {{ with $featured -}}
+      <meta name="twitter:image" content="{{ $featured.Permalink }}">
     {{ else -}}
-      <meta name="twitter:card" content="summary">
+      {{ with $.Site.Params.images -}}
+        <meta name="twitter:image" content="{{ index . 0 | absURL }}">
+      {{ else -}}
+        <meta name="twitter:card" content="summary">
+      {{ end -}}
     {{ end -}}
   {{ end -}}
 {{ end -}}
+
 <meta name="twitter:image:alt" content="{{ .Title }}">

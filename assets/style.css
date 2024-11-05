@@ -717,6 +717,7 @@ code,
 #blog-post-content ol,
   #blog-post-content ul {
   margin-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 #blog-post-content li {
@@ -930,8 +931,8 @@ code,
   bottom: -30px;
 }
 
-.-top-5 {
-  top: -1.25rem;
+.-top-4 {
+  top: -1rem;
 }
 
 .left-0 {
@@ -964,22 +965,6 @@ code,
 
 .top-auto {
   top: auto;
-}
-
-.left-\[10\%\] {
-  left: 10%;
-}
-
-.left-\[11\%\] {
-  left: 11%;
-}
-
-.left-\[12\%\] {
-  left: 12%;
-}
-
-.-top-4 {
-  top: -1rem;
 }
 
 .z-0 {
@@ -1220,8 +1205,8 @@ code,
   width: 2rem;
 }
 
-.w-\[30rem\] {
-  width: 30rem;
+.w-\[32rem\] {
+  width: 32rem;
 }
 
 .w-\[90\%\] {
@@ -1235,10 +1220,6 @@ code,
 
 .w-full {
   width: 100%;
-}
-
-.w-\[32rem\] {
-  width: 32rem;
 }
 
 .max-w-2xl {
@@ -1287,6 +1268,10 @@ code,
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .grow {
@@ -2020,6 +2005,10 @@ code,
 
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:justify-between {

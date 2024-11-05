@@ -116,7 +116,7 @@
 
   #blog-post-content ol,
   #blog-post-content ul {
-    @apply mb-4;
+    @apply mb-4 pl-8;
   }
 
   #blog-post-content li {

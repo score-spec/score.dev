@@ -717,6 +717,7 @@ code,
 #blog-post-content ol,
   #blog-post-content ul {
   margin-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 #blog-post-content li {

@@ -85,7 +85,7 @@ Score’s influence extends beyond code contributions. Here are some resources c
 
 KubeCon is a unique opportunity to connect with the Score team, and we invite you to visit the Humanitec booth #S36 to see demos, brainstorm ideas, and ask questions. 
 
-I will also be presenting at [**Cloud Native Rejekts**](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-na-salt-lake-city-2024/schedule/) on November 11th with his talk, [You Can Score It! Shift Down to the Platform. Do Not Shift Left to the Developers](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-na-salt-lake-city-2024/talk/WHR8SY/). This talk will cover how platform engineering can leverage Score to streamline responsibilities, focusing on shifting down to platform teams rather than shifting left to developers.
+I will also be presenting at [**Cloud Native Rejekts**](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-na-salt-lake-city-2024/schedule/) on November 11th with my talk, [You Can Score It! Shift Down to the Platform. Do Not Shift Left to the Developers](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-na-salt-lake-city-2024/talk/WHR8SY/). This talk will cover how platform engineering can leverage Score to streamline responsibilities, focusing on shifting down to platform teams rather than shifting left to developers.
 
 For those looking to dive deeper into Score, our CNCF Slack channel and our monthly **Community Calls** offer a collaborative space to explore the latest updates, discuss challenges, and connect with other users. Stay informed by [visiting our community page](https://docs.score.dev/docs/community/) and signing up for the calls.
 

@@ -3,7 +3,7 @@ title: Settling in - Score’s journey in the CNCF ecosystem
 date: 2024-11-08T00:00:00-00:00
 draft: false
 description: Discovering Score’s place in the CNCF, connecting developers and platform teams.
-image: 
+image: cover_image_score_journey_in_the_cncf_ecosystem.jpg
 author: susa-tunker
 ---
 

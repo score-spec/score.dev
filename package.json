@@ -29,7 +29,7 @@
   "license": "MIT",
   "devDependencies": {
     "auto-changelog": "^2.5",
-    "concurrently": "^9.1.1",
+    "concurrently": "^9.1.2",
     "exec-bin": "^1.0.0",
     "hugo-installer": ">=4.0.1",
     "shx": "^0.3.4",

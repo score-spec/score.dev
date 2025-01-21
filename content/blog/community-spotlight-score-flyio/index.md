@@ -245,6 +245,6 @@ Destroyed app score-blog-demo-app
 
 In this post we successfully demonstrated how to convert a Score workload into a Fly web app that can be deployed and accessed over the internet. We showed how `score-flyio` provisions real infrastructure to satisfy the `postgres` resource type. And we've shown how to enhance and expand the application after deployment. We've also shown how the application developer themselves did not need to read or understand how the Fly platform works itself or how to configure the app or database, but could stick to the standard Score workload specification for testing and deployment.
 
-Try out [`score-flyio`](https://github.com/astromechza/score-flyio) for yourself. For those already familiar with Score, we hope this provides some inspiration for what can be accomplished with community driven Score implementations or even bespoke tools in your own platform.
+Try out [`score-flyio`](https://github.com/astromechza/score-flyio) for yourself. For those already familiar with Score, we hope this provides some inspiration for what can be accomplished with community driven Score implementations or even bespoke tools in your own platform. If you're interested in building a new implementation, check out the new template repository for Go: [/github.com/score-spec/score-implementation-sample](https://github.com/score-spec/score-implementation-sample).
 
 For everything else—see you in the #score channel on [CNCF Slack](https://communityinviter.com/apps/cloud-native/cncf)!

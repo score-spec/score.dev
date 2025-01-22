@@ -2,7 +2,7 @@
 title: "Community spotlight on score-flyio"
 date: 2025-01-21T00:00:00-00:00
 draft: false
-description: "A recently released Score implementation supports deployment to the Fly.io platform."
+description: "Learn about a new Score implementation developed by the community that deploys to the Fly.io container platform. This is the first cloud-based runtime with stateful resource provisioning and is a great example for other platforms."
 image: title-image-with-text.jpeg
 author: ben-meier
 ---
@@ -26,6 +26,8 @@ In this post, we'll demonstrate how to deploy with `score-flyio` without needing
 Notable, Fly also supports managed and semi-managed cloud services that we can take advantage of in resource provisioners: self-managed Postgres app templates, managed Postgres by Supabase, managed Object Storage, etc.
 
 This is ideal for a Score implementation! Notably there are also some parts of the Score implementation that Fly cannot support just yet, for example multiple containers, but as long as we receive appropriate error messages for these cases, that's ok. `score-flyio` works by converting each Score workload file into a Toml file, provisioning resources using either `cmd` or `http` provisioners, and exporting any secrets into the Fly app.
+
+![a flow diagram showing the interactions of score-flyio](score-flyio-flow.svg)
 
 ## Setting up a new project
 

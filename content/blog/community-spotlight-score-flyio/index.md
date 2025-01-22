@@ -33,11 +33,11 @@ This is ideal for a Score implementation! Notably there are also some parts of t
 
 First, we need a Fly.io account to deploy against. We can sign up and use the personal organization with a Pay-as-you-go-plan.
 
-Then, we can install the `score-flyio` CLI from the [latest release](https://github.com/astromechza/score-flyio) on GitHub. For this demo, we'll extract the `score-flyio` binary from `score-flyio_1.1.4_darwin_arm64.tar.gz` and move it to `/usr/local/bin/`.
+Then, we can install the `score-flyio` CLI from the [latest release](https://github.com/astromechza/score-flyio) on GitHub. For this demo, we'll extract the `score-flyio` binary from `score-flyio_1.2.1_darwin_arm64.tar.gz` and move it to `/usr/local/bin/`.
 
 {{< highlight shell >}}
 $ score-flyio --version
-score-flyio version 1.1.4
+score-flyio version 1.2.1
 {{</ highlight >}}
 
 We'll then setup a default Fly region and an API token for our project to use. In this case, we'll deploy to the London region, and use an short lived API token for our personal org. We need an organization scoped token, because we may use resource provisioners that deploy their own Fly apps.
@@ -90,9 +90,9 @@ We can add this to our project in the usual way:
 
 {{< highlight shell >}}
 $ score-flyio generate score.yaml
-time=2025-01-21T12:49:43.010Z level=INFO msg="Added score file to project" file=score.yaml
-time=2025-01-21T12:49:43.010Z level=INFO msg="Primed resources" #workloads=1 #resources=1
-time=2025-01-21T12:49:43.010Z level=INFO msg="Persisted state file"
+2025-01-21 12:49:43 INFO Added score file to project file="score.yaml"
+2025-01-21 12:49:43 INFO Primed resources #workloads="1" #resources="1"
+2025-01-21 12:49:43 INFO Persisted state file
 Error: failed to provision resources: failed to find a provisioner for 'postgres.default#demo-app.db'
 {{</ highlight >}}
 
@@ -122,7 +122,7 @@ We can run `generate` again, and the logs will confirm that a Postgres app has b
 {{< highlight shell >}}
 $ score-flyio generate score.yaml
 ...
-time=2025-01-21T12:59:33.903Z level=INFO msg="Provisioning new postgres app"
+2025-01-21 12:59:33 INFO [demo-app.db] Provisioning new postgres app app="score-blog-pg-20250121125928"
 automatically selected personal organization: Ben
 Creating postgres cluster in organization personal
 ...
@@ -132,38 +132,20 @@ Postgres cluster score-blog-pg-20250121125928 created
 ...
   Connection string: postgres://postgres:095fe1b3d616a8062b30@score-blog-pg-20250121125928.flycast:5432
 ...
-time=2025-01-21T13:00:11.025Z level=INFO msg="Provisioned resource" uid=postgres.default#demo-app.db
+2025-01-21 13:00:11 INFO Provisioned resource uid="postgres.default#demo-app.db"
 ...
-Error: this workload uses application secrets at runtime, you must write these secrets to an output
-or stdout file using --secrets-file and then install them for app 'score-blog-demo-app'
+2025-01-21 13:00:11 WARN App contains secrets which must be imported before deployment. Either specify --deploy to have score-flyio do this for you, or use --secrets-file to output the secrets app="score-blog-demo-app" #secrets="1
 {{</ highlight >}}
 
 So in about 28 seconds, we got a new single-node Postgres instance with a database for our app. We can see this running in the Fly user interface:
 
 ![screenshot of Fly console showing a single app named score-blog-pg-20250121125928 with a Postgres logo](fly-pg-app.png)
 
-The secrets, in this case the Postgres instance and database passwords, have been stored in the `.score-flyio/state.yaml` file locally which should be backed up and restored for any serious CI pipeline. As the warning suggests, the secret environment variables for the app must be imported into Fly using the CLI.
-
-We can view these while we install them into our Fly app for deployment:
-
-{{< highlight yaml >}}
-$ fly app create score-blog-demo-app
-New app created: score-blog-demo-app
-
-$ score-flyio generate score.yaml --secrets-file=- | tee /dev/stderr | fly secrets import -a score-blog-demo-app --stage
-...
-time=2025-01-21T14:08:26.594Z level=INFO msg="Wrote runtime secrets for workload 'demo-app' to -"
-OVERRIDE_POSTGRES=postgres://demo-app-db1734-user:92f6455d06c98a697f0e@score-blog-pg-20250121125928.flycast:5432/demo-app-db1734
-Secrets have been staged, but not set on VMs. Deploy or update machines in this app for the secrets to take effect.
-{{</ highlight >}}
-
-We can view the imported secrets in the UI for our app:
-
-![screenshot of Fly console showing a pending app with a single OVERRIDE_POSTGRES secret](fly-app-secrets.png)
+The secrets, in this case the Postgres instance and database passwords, have been stored in the `.score-flyio/state.yaml` file locally which should be backed up and restored for any serious CI pipeline. As the warning suggests, the secret environment variables for the app must be imported into Fly for deployment. We'll use the `--deploy` flag in the next step.
 
 ## Deploying our app
 
-Lastly, we can deploy our app using the Fly CLI. We can see how the Score workload has been converted into a Toml file:
+We can see how the Score workload has been converted into a Toml file:
 
 {{< highlight toml >}}
 app = "score-blog-demo-app"
@@ -185,10 +167,12 @@ app = "score-blog-demo-app"
   memory = "256MB"
 {{</ highlight >}}
 
-Note that Fly only allocates unit CPUs and memory in chunks of 256MB, so our memory request has been rounded up. We're going to deploy this app with all the default CLI behavior. This will automatically allocate a shared public IPv4 address, DNS, and two Machines running the container.
+Note that Fly only allocates unit CPUs and memory in chunks of 256MB, so our memory request has been rounded up. Also note that the `OVERRIDE_POSTGRES` variable is not in this manifest, since we will be installing it as an application secret during deploy.
+
+We can deploy our app using the Fly CLI or by using the `--deploy` flag after `generate`. This will call the `fly` CLI behavior and automatically allocate a shared public IPv4 address, DNS, and two Machines running the container.
 
 {{< highlight shell >}}
-$ fly deploy -c fly_demo-app.toml
+$ score-flyio generate score.yaml --deploy
 ...
 Provisioning ips for score-blog-demo-app
   Dedicated ipv6: 2a09:8280:1::60:b993:0
@@ -199,6 +183,7 @@ Creating a second machine to increase service availability
 Finished launching new machines
 ...
 Visit your newly deployed app at https://score-blog-demo-app.fly.dev/
+...
 {{</ highlight >}}
 
 Now we can view the running app in the browser, complete with TLS, DNS, routing and all!
@@ -212,6 +197,10 @@ Expanding "Show details" shows more aspects of the request, response, and runtim
 The Fly console also shows us the two Machines running our container and we can view the metrics of the running app.
 
 ![screenshot of Fly console showing two Machines](fly-machines.png)
+
+We can view the imported secrets too:
+
+![screenshot of Fly console showing a pending app with a single OVERRIDE_POSTGRES secret](fly-app-secrets.png)
 
 ## Onwards and upwards
 

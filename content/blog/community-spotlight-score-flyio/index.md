@@ -3,6 +3,7 @@ title: "Community spotlight on score-flyio"
 date: 2025-01-21T00:00:00-00:00
 draft: false
 description: "A recently released Score implementation supports deployment to the Fly.io platform."
+image: title-image-with-text.jpeg
 author: ben-meier
 ---
 

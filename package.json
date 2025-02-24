@@ -33,7 +33,7 @@
     "exec-bin": "^1.0.0",
     "hugo-installer": ">=4.0.1",
     "shx": "^0.3.4",
-    "tailwindcss": "^4.0.6"
+    "tailwindcss": "^4.0.8"
   },
   "otherDependencies": {
     "hugo": "0.125.4"

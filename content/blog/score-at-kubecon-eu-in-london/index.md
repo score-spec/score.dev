@@ -1,6 +1,6 @@
 ---
 title: Score at KubeCon EU in London
-date: 2024-02-26T00:00:00-00:00
+date: 2025-02-26T00:00:00-00:00
 draft: false
 description: Join us at KubeCon EU 2025 in London!
 image: Score at KubeCon in LDN - Score.png

@@ -3,7 +3,7 @@ title: Score at KubeCon EU in London
 date: 2024-02-26T00:00:00-00:00
 draft: false
 description: Join us at KubeCon EU 2025 in London!
-image: FIXME.jpg
+image: Score at KubeCon in LDN - Score.png
 author: mathieu-benoit
 ---
 After [KubeCon NA in Salt Lake City in 2024](https://score.dev/blog/score-at-kubecon-na-in-slc/), Score will be very well represented for its second KubeCon as CNCF Sandbox project in London.
@@ -64,7 +64,7 @@ Here are some examples of what the community has been sharing recently:
 - A [new blog post illustrating how Score can help the Platform Engineerings to abstract and standardize features of their Platform](https://itnext.io/whos-really-responsible-for-an-internal-developer-platform-5dce5f2a0401). And how it could greatly simplify the day-2 operations.
 - A [new blog post in Portuguese](https://www.linkedin.com/pulse/descomplicando-o-score-cncf-clecio-antao-nyt3f/) showcasing both `score-compose` and `score-k8s` in actions.
 
-For those looking to dive deeper into Score, our CNCF Slack channel and our monthly Community Calls offer a collaborative space to explore the latest updates, discuss challenges, and connect with other users. Stay informed by visiting our community page and signing up for the calls.
+For those looking to dive deeper into Score, our CNCF Slack channel and our monthly Community Calls offer a collaborative space to explore the latest updates, discuss challenges, and connect with other users. Stay informed by [visiting our community page](https://docs.score.dev/docs/community/) and signing up for the calls.
 
 Can't wait to attend KubeCon London and see where this edition will bring the Score project!
 

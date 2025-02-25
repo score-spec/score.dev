@@ -1,4 +1,4 @@
 ---
 title: Blog
-featured_post: score-at-kubecon-na-in-slc
+featured_post: score-at-kubecon-eu-in-london
 ---

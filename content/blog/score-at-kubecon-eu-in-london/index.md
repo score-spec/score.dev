@@ -16,7 +16,7 @@ Here are four opportunities to hear more about Score and meet with maintainers a
 
 [Project Lightning Talk: You Can Score It! Shift Down to the Platform. Do Not Shift Left to the Developers](https://sched.co/1tcwp).
 
-**Tuesday April 1st, 2025 16:07 - 16:12 BST.**
+**Tuesday April 1st, 2025 16:07-16:12 BST.**
 
 Developer Experience (DevX) is a key concept in Platform Engineering and in the cloud native ecosystem. Its primary goal is to empower developers, allowing them to focus on their code and generate business value rather than dealing with Kubernetes and infrastructure complexities.
 
@@ -36,7 +36,7 @@ This talk demonstrates a practical blueprint between Dapr and Score, where you w
 
 ## Opportunity #3 - Kiosk: Meet Score maintainers
 
-**April 3rd, 10:30-13:30 BST.**
+**Thursday April 3rd, 2025 10:30-13:30 BST.**
 
 Score will have a dedicated **Kiosk 2A** provided by the CNCF (thank you!) in the Project Pavilion on Thursday morning. Please visit this Kiosk to meet with Score maintainers. We will answer all your questions and will show live demos.
 
@@ -44,7 +44,7 @@ Score will have a dedicated **Kiosk 2A** provided by the CNCF (thank you!) in th
 
 [Contribfest: Enhancing Your Developers Experience With Score](https://sched.co/1tczO). 
 
-**Thursday April 3rd, 2025 (14:15 - 15:30 BST).**
+**Thursday April 3rd, 2025 14:15-15:30 BST.**
 
 Join us to contribute to Score! In this session, we will guide you through how you can contribute to either the docs (in Markdown), the source code of `score-go` library (in Go) or the two CLIs implementations: `score-compose` and `score-k8s` (in Go).
 Attendees who would like to fix bugs and implement new features can pair program with maintainers to directly contribute and have impact to the Score project. We will also guide anyone who would like to write their own provisioners to provision external dependencies with OpenTofu, Crossplane, etc.
@@ -53,7 +53,7 @@ Attendees who would like to fix bugs and implement new features can pair program
 
 Score projects got some updates in the last few months, since last KubeCon NA 2024:
 - The [`spec`](https://github.com/score-spec/spec/releases) got two new features: `containerProbe` type `exec` for command execution, `binaryContent` for inline Score `files`.
-- [`score-compose`](https://github.com/score-spec/score-compose/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `mssql` provisioners by default and now supports a new `score-compose provisioners list` command.
+- [`score-compose`](https://github.com/score-spec/score-compose/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `mssql` provisioners by default and now supports the new `score-compose provisioners list` command.
 - [`score-k8s`](https://github.com/score-spec/score-k8s/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `s3` provisioners by default.
 - Overall the Score projects got their [CLOMonitor score](https://clomonitor.io/projects/cncf/score) significantly improved to be more compliant with best practices and standards as CNCF project.
 

@@ -53,7 +53,7 @@ Attendees who would like to fix bugs and implement new features can pair program
 
 Score projects got some updates in the last few months, since last KubeCon NA 2024:
 - The [`spec`](https://github.com/score-spec/spec/releases) got two new features: `containerProbe` type `exec` for command execution, `binaryContent` for inline Score `files`.
-- [`score-compose`](https://github.com/score-spec/score-compose/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `mssql` provisioners by default.
+- [`score-compose`](https://github.com/score-spec/score-compose/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `mssql` provisioners by default and now supports a new `score-compose provisioners list` command.
 - [`score-k8s`](https://github.com/score-spec/score-k8s/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `s3` provisioners by default.
 - Overall the Score projects got their [CLOMonitor score](https://clomonitor.io/projects/cncf/score) significantly improved to be more compliant with best practices and standards as CNCF project.
 

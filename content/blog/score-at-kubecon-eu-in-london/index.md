@@ -63,6 +63,7 @@ Here are some examples of what the community has been sharing recently:
 - A [new `score-flyio` implementation](https://score.dev/blog/community-spotlight-score-flyio/) developed by the community that deploys Score files to the Fly.io container platform.
 - A [new blog post illustrating how Score can help the Platform Engineerings to abstract and standardize features of their Platform](https://itnext.io/whos-really-responsible-for-an-internal-developer-platform-5dce5f2a0401). And how it could greatly simplify the day-2 operations.
 - A [new blog post in Portuguese](https://www.linkedin.com/pulse/descomplicando-o-score-cncf-clecio-antao-nyt3f/) showcasing both `score-compose` and `score-k8s` in actions.
+- Score was invited during the ["You Choose!" Ch. 05 / Ep. 05 - Specialized Templating - Feat. Porter, Werf, Radius, Score, PipeCD](https://youtu.be/TEZVeWsirsw)
 
 For those looking to dive deeper into Score, our CNCF Slack channel and our monthly Community Calls offer a collaborative space to explore the latest updates, discuss challenges, and connect with other users. Stay informed by [visiting our community page](https://docs.score.dev/docs/community/) and signing up for the calls.
 

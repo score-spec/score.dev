@@ -60,7 +60,7 @@ Score projects got some updates in the last few months, since last KubeCon NA 20
 Interested in contributing and being part of the Score community as a contributor? Check out the [list of good first issues on GitHub](https://clotributor.dev/search?foundation=cncf&project=score) to get started!
 
 Here are some examples of what the community has been sharing recently:
-- New examples with the `cmd` provisioner type have been shared in the ]library of provisioners](https://github.com/score-spec/community-provisioners) shared by the community (loading `.env` with `python` and provision `redis` with `helm`).
+- New examples with the `cmd` provisioner type have been shared in the [library of provisioners](https://github.com/score-spec/community-provisioners) shared by the community (load `.env` with `python` and provision `redis` with `helm`).
 - A [new `score-flyio` implementation](https://score.dev/blog/community-spotlight-score-flyio/) developed by the community that deploys Score files to the Fly.io container platform.
 - A [new blog post illustrating how Score can help the Platform Engineerings to abstract and standardize features of their Platform](https://itnext.io/whos-really-responsible-for-an-internal-developer-platform-5dce5f2a0401). And how it could greatly simplify the day-2 operations.
 - A [new blog post in Portuguese](https://www.linkedin.com/pulse/descomplicando-o-score-cncf-clecio-antao-nyt3f/) showcasing both `score-compose` and `score-k8s` in actions.

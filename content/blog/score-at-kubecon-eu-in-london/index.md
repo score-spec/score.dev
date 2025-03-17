@@ -53,13 +53,14 @@ Attendees who would like to fix bugs and implement new features can pair program
 
 Score projects got some updates in the last few months, since last KubeCon NA 2024:
 - The [`spec`](https://github.com/score-spec/spec/releases) got two new features: `containerProbe` type `exec` for command execution, `binaryContent` for inline Score `files`.
-- [`score-compose`](https://github.com/score-spec/score-compose/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `mssql` provisioners by default and now supports the new `score-compose provisioners list` command.
-- [`score-k8s`](https://github.com/score-spec/score-k8s/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `s3` provisioners by default.
+- [`score-compose`](https://github.com/score-spec/score-compose/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `mssql` provisioners by default, now supports the new `score-compose provisioners list` command and the very well expected new `score-compose init --patch-templates` command. That's a key milestone for the `score-compose` project!
+- [`score-k8s`](https://github.com/score-spec/score-k8s/releases), in addition to some bugs fixed and the integration of the new `spec` version, got a new `s3` provisioners by default and the very well expected new `score-k8s init --patch-templates` command. That's a key milestone for the `score-k8s` project!
 - Overall the Score projects got their [CLOMonitor score](https://clomonitor.io/projects/cncf/score) significantly improved to be more compliant with best practices and standards as CNCF project.
 
 Interested in contributing and being part of the Score community as a contributor? Check out the [list of good first issues on GitHub](https://clotributor.dev/search?foundation=cncf&project=score) to get started!
 
 Here are some examples of what the community has been sharing recently:
+- New [library of patch templates examples](https://github.com/score-spec/community-patchers) for the new `score-compose|k8s init --patch-templates` (`securityContext`, `dapr`, etc.).
 - New examples with the `cmd` provisioner type have been shared in the [library of provisioners](https://github.com/score-spec/community-provisioners) shared by the community (load `.env` with `python` and provision `redis` with `helm`).
 - A [new `score-flyio` implementation](https://score.dev/blog/community-spotlight-score-flyio/) developed by the community that deploys Score files to the Fly.io container platform.
 - A [new blog post illustrating how Score can help the Platform Engineerings to abstract and standardize features of their Platform](https://itnext.io/whos-really-responsible-for-an-internal-developer-platform-5dce5f2a0401). And how it could greatly simplify the day-2 operations.

@@ -10,13 +10,13 @@ After [KubeCon NA in Salt Lake City in 2024](https://score.dev/blog/score-at-kub
 
 This year’s updates and community achievements mark an exciting milestone, and we’re eager to connect with the cloud-native community to showcase how Score is evolving.
 
-Here are four opportunities to hear more about Score and meet with maintainers and contributors at this year’s KubeCon EU in London in April 2025.
+Here are five opportunities to hear more about Score and meet with maintainers and contributors at this year’s KubeCon EU in London in April 2025.
 
 ## Opportunity #1 - Lightning Talk: Intro to Score
 
 [Project Lightning Talk: You Can Score It! Shift Down to the Platform. Do Not Shift Left to the Developers](https://sched.co/1tcwp).
 
-**Tuesday April 1st, 2025 16:07-16:12 BST.**
+**Tuesday April 1st, 2025 12:41-12:46 BST.**
 
 Developer Experience (DevX) is a key concept in Platform Engineering and in the cloud native ecosystem. Its primary goal is to empower developers, allowing them to focus on their code and generate business value rather than dealing with Kubernetes and infrastructure complexities.
 
@@ -24,7 +24,20 @@ Thanks to the Open Container Initiative (OCI) standard, the rise of cloud native
 
 Let’s see in action how we answer these questions with Score, an open-source workload specification that enables developers to deploy their workloads across a spectrum of runtime platforms like Docker Compose, Kubernetes and more.
 
-## Opportunity #2 - Talk: Dapr + Score
+## Opportunity #2 - Workshop: Score + Humanitec
+
+[How to build the perfect platform with Backstage, Score, Humanitec and OpenTofu](https://lu.ma/24p67i93).
+
+**Tuesday April 1st, 2025 17:00-19:00 BST.**
+
+​Learn how to build golden paths for developers, automate and standardize infrastructure, utilizing best-in-breed platform tools and tech like Backstage, Score, Humanitec Platform Orchestrator, Kubernetes and OpenTofu.
+
+​Participants will work through:
+- ​How to utilize Backstage as a portal, Score as workload spec, OpenTofu for IaC, and Humanitec Platform Orchestrator as the graph-based backend of your platform;
+- ​How to build golden paths for use cases like ephemeral environments or the management of resource dependencies;
+- ​How to centralize security and governance for any applications in your organization.
+
+## Opportunity #3 - Talk: Dapr + Score
 
 [Dapr + Score: Mixing the Perfect Cocktail for an Enhanced Developer Experience](https://sched.co/1txGi).
 
@@ -34,13 +47,13 @@ Developer Experience (DevEx) is an important concept in Platform Engineering and
 Tools such as Dapr and Score are being used in innovative ways to make a wider range of developers more productive. On one hand, they allow the Developers to be abstracted from underlying infrastructure and dependencies. On the other hand, Platform Engineers can easily configure the building blocks and associated infrastructure, seamlessly for the Developers.
 This talk demonstrates a practical blueprint between Dapr and Score, where you will see how to deploy any Dapr containerized workloads defined by Score, to Docker Compose or Kubernetes.
 
-## Opportunity #3 - Kiosk: Meet Score maintainers
+## Opportunity #4 - Kiosk: Meet Score maintainers
 
 **Thursday April 3rd, 2025 10:30-13:30 BST.**
 
 Score will have a dedicated **Kiosk 2A** provided by the CNCF (thank you!) in the Project Pavilion on Thursday morning. Please visit this Kiosk to meet with Score maintainers. We will answer all your questions and will show live demos.
 
-## Opportunity #4 - Contribfest: Contribute to Score
+## Opportunity #5 - Contribfest: Contribute to Score
 
 [Contribfest: Enhancing Your Developers Experience With Score](https://sched.co/1tczO). 
 

@@ -1,6 +1,6 @@
 ---
 title: Trip report - Score at KubeCon London 2025
-date: 2025-04-07T00:00:00-00:00
+date: 2025-04-06T00:00:00-00:00
 draft: false
 description: Learn more about all the activities related to Score that happened at KubeCon London 2025!
 image: kubecon-london-2025.png

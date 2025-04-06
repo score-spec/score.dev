@@ -1,4 +1,4 @@
 ---
 title: Blog
-featured_post: score-at-kubecon-eu-in-london
+featured_post: kubecon-london-2025-trip-report
 ---

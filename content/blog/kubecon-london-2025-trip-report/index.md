@@ -38,6 +38,8 @@ With [Kendall from Diagrid](https://www.linkedin.com/in/kendallroden/), we deliv
 
 ![](dapr.jpg)
 
+![](dapr-2.jpg)
+
 As Sandbox project, the CNCF gave Score the opportunity to have a Kiosk in the Project Pavilion area, on Thursday for 3 hours. [Ben](https://www.linkedin.com/in/ben-meier-b76224129/), [Chris](https://www.linkedin.com/in/chris-stephenson-99ba3628/) and I as Score Maintainers were able to discuss with ~30 people:
 
 ![](kiosk.jpg)

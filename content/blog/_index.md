@@ -1,4 +1,4 @@
 ---
 title: Blog
-featured_post: kubecon-london-2025-trip-report
+featured_post: celebrating-1-year-as-cncf-sandbox
 ---

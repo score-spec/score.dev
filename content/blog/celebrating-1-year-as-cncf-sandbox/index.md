@@ -13,18 +13,21 @@ Wow! What a ride, nothing but fun, gratitude and great learnings!
 
 One of our key learning is that an open source project without its contributors and its community cannot go too far.
 
-We are very grateful about any contributions that the community is generating, solidifying Score's mission:
+We are very grateful for all the interactions and contributions with and by the Score community, solidifying Score's mission:
 
 > Score is loved by developers because they can run the same workload on completely different technology stacks, without needing to be an expert in any one of them.
+
+![Image showing the vision of Score, with personas, implementations and provisioners](score-mission.png)
 
 In one year, the Score project got [19 new contributors](https://score.devstats.cncf.io/d/52/new-contributors-table?orgId=1&from=1720324800000&to=1751947199000)!
 
 ![Screenshot of the Score contributors as of 2025-07-07](contributors-as-2025-07-07.png)
 
-[Humanitec](https://humanitec.com/) has been having an important role for the Score project, since its creation, through the donation to the CNCF and by still making sure the Score project is growing outside Humanitec employees and customers. We now have 50% of the Maintainers outside of Humanitec and the number of Contributors is now at 90% outside Humanitec. This is key to set the sustainable foundation for the Score project and its community to grow and expand.
+[Humanitec](https://humanitec.com/) has played an important role for the Score project, since its creation, through the donation to the CNCF and by still making sure the Score project is growing outside Humanitec employees and customers. We now have 50% of the Maintainers outside of Humanitec and the number of Contributors is now at 90% outside Humanitec. This is key to set a sustainable foundation for the Score project and its community to grow and expand.
 
-Also, the CNCF has been instrumental and key FIXME with all the tools they are providing to any CNCF project, in order to grow, being better and more inclusive.
-Last [KubeCon EU 2025 in London](https://score.dev/blog/kubecon-london-2025-trip-report/) was a great example, where the Score project did a Project Lightning talk, a ContribFest and got a Kiosk.
+The CNCF has been instrumental to onboard Score as a CNCF project, and by providing a framework, the tools and the guidance to grow as a community. Last [KubeCon EU 2025 in London](https://score.dev/blog/kubecon-london-2025-trip-report/) was a great example, where the Score project got the opportunity to have a Project Lightning talk, a ContribFest and a Kiosk.
+
+![Photos of the Score maintainers at the Score Kiosk at KubeCon EU 2025](score-kiosk.jpg)
 
 Great collaborations with other CNCF projects have been very inspirational, just to name a few of them:
 - [Dapr](https://score.dev/blog/kubecon-london-2025-trip-report/)
@@ -85,7 +88,7 @@ $ score-k8s resources list
 
 ## `score-k8s generate --namespace`
 
-[**Artem Lajko**](https://www.linkedin.com/in/lajko/) while testing, learning and [blogging about Score](https://medium.com/itnext/stop-building-platforms-nobody-uses-pick-the-right-kubernetes-abstraction-with-gitops-64681357690f), provided a great feedback that landed to a feature request in `score-k8s`: ["How to easily supply the `Namespace` to the generated Kubernetes manifests?"](https://github.com/score-spec/score-k8s/issues/172). Kudos to [**Anurag Yadav**](https://www.linkedin.com/in/yadavanurag13/) who implemented this new feature and associated new flags like illustrated below:
+[**Artem Lajko**](https://www.linkedin.com/in/lajko/), while testing, learning and [blogging about Score](https://medium.com/itnext/stop-building-platforms-nobody-uses-pick-the-right-kubernetes-abstraction-with-gitops-64681357690f), provided a great feedback that landed to a feature request in `score-k8s`: ["How to easily supply the `Namespace` to the generated Kubernetes manifests?"](https://github.com/score-spec/score-k8s/issues/172). Kudos to [**Anurag Yadav**](https://www.linkedin.com/in/yadavanurag13/) who implemented this new feature and associated new flags like illustrated below:
 
 {{< highlight shell >}}
 $ score-k8s generate --namespace test --generate-namespace
@@ -105,9 +108,9 @@ We have already [plenty of additional ideas and contents to inject in there](htt
 
 ## Upwards
 
-On behalf of the Score Maintainers ([Susa](https://www.linkedin.com/in/susatuenker/), [Ben](https://www.linkedin.com/in/ben-meier-b76224129/), [Chris](https://www.linkedin.com/in/chris-stephenson-99ba3628/) and [Mathieu](https://www.linkedin.com/in/mathieubenoitqc/)) and the entire Score community, we would like to give a big shout out to all these contributors. You have had so much impact to the Score project!
+On behalf of the Score Maintainers ([**Susa**](https://www.linkedin.com/in/susatuenker/), [**Ben**](https://www.linkedin.com/in/ben-meier-b76224129/), [**Chris**](https://www.linkedin.com/in/chris-stephenson-99ba3628/) and [**Mathieu**](https://www.linkedin.com/in/mathieubenoitqc/)) and the entire Score community, we would like to give a big shout out to all these contributors. You have had so much impact to the Score project!
 
-This is really shaping the future of how Developers and Platform Engineers interact with cloud native applications, for the best!
+This is really shaping the future of how Developers and Platform Engineers interact with cloud native applications and tools, for the best!
 
 Can't wait to see where this community will bring the Score project for its second year as CNCF Sandbox!
 

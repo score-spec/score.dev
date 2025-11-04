@@ -11,9 +11,9 @@ _Hi, there! Tobi here, Tech Writer at Humanitec and Score contributor._
 
 🎉 Today, Score is officially announcing the new [Score Examples Hub](https://docs.score.dev/examples/)! 🎉
 
-One of the feedback we have been capturing is to show more concrete examples and use cases with Score.
+One of the feedbacks we have been capturing is to show more concrete examples and use cases with Score.
 
-When we celebrated the [first anniversary of Score as CNCF Sandbox](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/) couple of months ago, we provided a sneak peek about this Score Examples Hub. Since then, we have been adding more examples of Score files, resource provisioners and patch templates.
+When we celebrated the [first anniversary of Score as CNCF Sandbox](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/) a couple of months ago, we provided a sneak peek about this Score Examples Hub. Since then, we have been adding more examples of Score files, resource provisioners and patch templates.
 
 ![Screenshot of the Score Examples Hub Homepage](score-examples-hub-homepage.png)
 
@@ -57,13 +57,13 @@ docker compose up -d --wait
 
 ## Score resources provisioners examples
 
-Find examples of resources provisioners with either [`score-compose`](https://docs.score.dev/docs/score-implementation/score-compose/resources-provisioners/) or [`score-k8s`](https://docs.score.dev/docs/score-implementation/score-k8s/resources-provisioners/):
+Find examples of resources provisioners with either [`score-compose`](https://docs.score.dev/examples/resource-provisioners?implementation=score-compose) or [`score-k8s`](https://docs.score.dev/examples/resource-provisioners?implementation=score-k8s):
 
 ![Screenshot of the Score Examples Hub for Resources Provisioners](score-examples-hub-provisioners.png)
 
 ## Score patch templates examples
 
-Find examples of patch templates with either [`score-compose`](https://docs.score.dev/docs/score-implementation/score-compose/patch-templates/) or [`score-k8s`](https://docs.score.dev/docs/score-implementation/score-k8s/patch-templates/):
+Find examples of patch templates with either [`score-compose`](https://docs.score.dev/examples/patch-templates?implementation=score-compose) or [`score-k8s`](https://docs.score.dev/examples/patch-templates?implementation=score-k8s):
 
 ![Screenshot of the Score Examples Hub for Patch Templates](score-examples-hub-patchers.png)
 

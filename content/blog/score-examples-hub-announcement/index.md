@@ -50,10 +50,12 @@ Run:
 score-compose init \
     --provisioners https://raw.githubusercontent.com/score-spec/community-provisioners/refs/heads/main/llm-model/score-compose/10-dmr-llm-model-via-service-provider.provisioners.yaml
 
-score-compose generate score.yaml
+score-compose generate score.yaml -o compose.yaml
 
 docker compose up -d --wait
 ```
+
+In the `score.yaml` file, the Developer can request a `llm-model` resource to use it in their app by injecting the corresponding `url` generated when this Score file will be deployed. By using `score-compose init --provisioners`, the actual implementation of the `llm-model` resource is downloaded locally (you can [look at its definition here](https://docs.score.dev/examples/resource-provisioners/community/llm-model/score-compose/template/dmr-llm-model-via-service-provider/), Docker Model Runner is used). Then, with `score-compose generate`, both the `my-container` and the `llm-model` services are generated into a `compose.yaml` file. Finally, `docker compose up` will deploy them. 
 
 ## Score resources provisioners examples
 

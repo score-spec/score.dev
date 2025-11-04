@@ -11,7 +11,7 @@ _Hi, there! Tobi here, Tech Writer at Humanitec and Score contributor._
 
 🎉 Today, Score is officially announcing the new [Score Examples Hub](https://docs.score.dev/examples/)! 🎉
 
-One of the feedback we have been capturing is to show more concrete examples and use cases of Score.
+One of the feedback we have been capturing is to show more concrete examples and use cases with Score.
 
 When we celebrated the [first anniversary as CNCF Sandbox of Score](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/) couple of months ago, we provided a sneak peek about this Score Examples Hub. Since then, we have been adding more examples of Score files, resource provisioners and patch templates.
 

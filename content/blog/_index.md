@@ -1,4 +1,4 @@
 ---
 title: Blog
-featured_post: celebrating-1-year-as-cncf-sandbox
+featured_post: score-examples-hub-announcement
 ---

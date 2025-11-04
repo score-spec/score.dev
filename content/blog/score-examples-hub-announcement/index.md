@@ -13,13 +13,13 @@ _Hi, there! Tobi here, Tech Writer at Humanitec and Score contributor._
 
 One of the feedback we have been capturing is to show more concrete examples and use cases with Score.
 
-When we celebrated the [first anniversary as CNCF Sandbox of Score](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/) couple of months ago, we provided a sneak peek about this Score Examples Hub. Since then, we have been adding more examples of Score files, resource provisioners and patch templates.
+When we celebrated the [first anniversary of Score as CNCF Sandbox](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/) couple of months ago, we provided a sneak peek about this Score Examples Hub. Since then, we have been adding more examples of Score files, resource provisioners and patch templates.
 
 ![Screenshot of the Score Examples Hub Homepage](score-examples-hub-homepage.png)
 
 ## Score specification and resources examples
 
-Find Score files examples illustrating how to use the Score specification as well as how to use the resources provisioners with both `score-compose` and `score-k8s`:
+Find Score files examples illustrating how to use the Score specification as well as how to use the resources provisioners with either [`score-compose`](https://docs.score.dev/docs/score-implementation/score-compose/) or [`score-k8s`](https://docs.score.dev/docs/score-implementation/score-k8s/):
 
 ![Screenshot of the Score Examples Hub for Spec & Resources](score-examples-hub-spec-resources.png)
 
@@ -57,19 +57,19 @@ docker compose up -d --wait
 
 ## Score resources provisioners examples
 
-Find examples of resources provisioners for both `score-compose` and `score-k8s`:
+Find examples of resources provisioners with either [`score-compose`](https://docs.score.dev/docs/score-implementation/score-compose/resources-provisioners/) or [`score-k8s`](https://docs.score.dev/docs/score-implementation/score-k8s/resources-provisioners/):
 
 ![Screenshot of the Score Examples Hub for Resources Provisioners](score-examples-hub-provisioners.png)
 
 ## Score patch templates examples
 
-Find examples of patch templates for both `score-compose` and `score-k8s`:
+Find examples of patch templates with either [`score-compose`](https://docs.score.dev/docs/score-implementation/score-compose/patch-templates/) or [`score-k8s`](https://docs.score.dev/docs/score-implementation/score-k8s/patch-templates/):
 
 ![Screenshot of the Score Examples Hub for Patch Templates](score-examples-hub-patchers.png)
 
 ## More advanced examples
 
-Find more advanced examples illustrating how to deploy a NodeJS application talking to a PostgreSQL database, how to deploy Backstage and Nginx, how to use Dapr with your workloads, etc. with both `score-compose` and `score-k8s`:
+Find more advanced examples illustrating how to deploy a NodeJS application talking to a PostgreSQL database, how to deploy Backstage and Nginx, how to use Dapr with your workloads, etc. with either `score-compose` or `score-k8s`:
 
 ![Screenshot of the Score Examples Hub for more advanced use cases](score-examples-hub-advanced.png)
 

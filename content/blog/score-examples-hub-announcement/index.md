@@ -1,6 +1,6 @@
 ---
 title: "Announcing the new Score Examples Hub"
-date: 2025-10-03T00:00:00-00:00
+date: 2025-11-03T00:00:00-00:00
 draft: false
 description: "Announcement of the new place for all the examples about Score: The Score Examples Hub!"
 image: score-examples-hub-announcement.png

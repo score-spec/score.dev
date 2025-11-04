@@ -7,13 +7,13 @@ image: score-examples-hub-announcement.png
 author: tobias-babin
 ---
 
-_Hi, there! Tobi here, Tech Writer for Humanitec and Score contributor._
+_Hi, there! Tobi here, Tech Writer at Humanitec and Score contributor._
 
 🎉 Today, Score is officially announcing the new [Score Examples Hub](https://docs.score.dev/examples/)! 🎉
 
 One of the feedback we have been capturing is to show more concrete examples and use cases of Score.
 
-When we celebrated the first anniversary of Score couple of months ago, we provided a sneak peek about this Score Examples Hub. Since then, we we have been adding more examples of Score files, resources provisioners and patch templates.
+When we celebrated the [first anniversary as CNCF Sandbox of Score](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/) couple of months ago, we provided a sneak peek about this Score Examples Hub. Since then, we have been adding more examples of Score files, resource provisioners and patch templates.
 
 ![Screenshot of the Score Examples Hub Homepage](score-examples-hub-homepage.png)
 
@@ -47,10 +47,10 @@ resources:
 
 Run:
 ```bash
-score-commpose init \
+score-compose init \
     --provisioners https://raw.githubusercontent.com/score-spec/community-provisioners/refs/heads/main/llm-model/score-compose/10-dmr-llm-model-via-service-provider.provisioners.yaml
 
-score-commpose generate score.yaml
+score-compose generate score.yaml
 
 docker compose up -d --wait
 ```

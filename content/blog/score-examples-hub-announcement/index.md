@@ -19,14 +19,15 @@ When we celebrated the [first anniversary of Score as CNCF Sandbox](https://scor
 
 ## Score specification and resources examples
 
-Find Score files examples illustrating how to use the Score specification as well as how to use the resources provisioners with either [`score-compose`](https://docs.score.dev/docs/score-implementation/score-compose/) or [`score-k8s`](https://docs.score.dev/docs/score-implementation/score-k8s/):
+Find Score files examples illustrating how to use the Score specification as well as the resources provisioners with either [`score-compose`](https://docs.score.dev/docs/score-implementation/score-compose/) or [`score-k8s`](https://docs.score.dev/docs/score-implementation/score-k8s/):
 
 ![Screenshot of the Score Examples Hub for Spec & Resources](score-examples-hub-spec-resources.png)
 
 As an example, that's how in there you will be able to find how you can [use a local LLM model with Score and `score-compose`](https://docs.score.dev/examples/score/resources/community-provisioners/llm-model/):
 
 `score.yaml`:
-```yaml
+
+{{< highlight yaml >}}
 apiVersion: score.dev/v1b1
 metadata:
   name: my-workload
@@ -43,17 +44,18 @@ resources:
     type: llm-model
     params:
       model: ai/smollm2:135M-Q4_0
-```
+{{</ highlight >}}
 
 Run:
-```bash
+
+{{< highlight shell >}}
 score-compose init \
     --provisioners https://raw.githubusercontent.com/score-spec/community-provisioners/refs/heads/main/llm-model/score-compose/10-dmr-llm-model-via-service-provider.provisioners.yaml
 
 score-compose generate score.yaml -o compose.yaml
 
 docker compose up -d --wait
-```
+{{</ highlight >}}
 
 In the `score.yaml` file, the Developer can request a `llm-model` resource to use it in their app by injecting the corresponding `url` generated when this Score file will be deployed. By using `score-compose init --provisioners`, the actual implementation of the `llm-model` resource is downloaded locally (you can [look at its definition here](https://docs.score.dev/examples/resource-provisioners/community/llm-model/score-compose/template/dmr-llm-model-via-service-provider/), Docker Model Runner is used). Then, with `score-compose generate`, both the `my-container` and the `llm-model` services are generated into a `compose.yaml` file. Finally, `docker compose up` will deploy them. 
 

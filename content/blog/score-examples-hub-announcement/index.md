@@ -67,7 +67,7 @@ Find examples of patch templates for both `score-compose` and `score-k8s`:
 
 ![Screenshot of the Score Examples Hub for Patch Templates](score-examples-hub-patchers.png)
 
-## More complete examples
+## More advanced examples
 
 Find more advanced examples illustrating how to deploy a NodeJS application talking to a PostgreSQL database, how to deploy Backstage and Nginx, how to use Dapr with your workloads, etc. with both `score-compose` and `score-k8s`:
 

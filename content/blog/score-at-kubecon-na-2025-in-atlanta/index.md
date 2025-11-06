@@ -16,7 +16,7 @@ Here are three opportunities to hear more about Score and meet with maintainers 
 
 [Make your Developer's Pains go Away, with the Right Level of Abstraction for your Platform](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-atlanta-na-atlanta-2025/talk/X3LUL3/).
 
-**Tuesday April 1st, 2025 12:41-12:46 BST.** at the [Cloud Native Rejekts](https://cloud-native.rejekts.io/)
+**Saturday November 8th, 2025 11:45am–12:15pm.** at [Cloud Native Rejekts](https://cloud-native.rejekts.io/)
 
 Developers don’t code eight hours a day. They code one — and fight with TicketOps, Infrastructure dependencies and Security blockers the rest of the time. Many platform teams build Internal Developer Platforms (IDPs) to help, but poor abstraction choices make things worse. In this talk, we’ll share a battle-tested approach to building the right level of abstraction on top of Kubernetes using Score and Kro.
 
@@ -26,7 +26,7 @@ This talk isn’t about Kubernetes and GitOps. It’s about empathy. It’s abou
 
 ## Opportunity #2 - Maintainer Summit
 
-**Tuesday April 1st, 2025 17:00-19:00 BST.**
+**Sunday November 9th, 2025**
 
 To represent the Score project, Mathieu got the invitation to attend the [Maintainer Summit](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/features-add-ons/maintainer-summit/), for the second time in a row.
 
@@ -34,7 +34,7 @@ The CNCF Maintainer Summit is an exclusive event for the people behind the CNCF 
 
 ## Opportunity #3 - Kiosk 10A: Meet Score Maintainers
 
-**Wednesday 12th November, 2025 - 2-5pm**
+**Wednesday November 12th, 2025 - 2-5pm**
 
 ![](kiosk.jpg)
 
@@ -43,9 +43,10 @@ Score will have a dedicated **Kiosk 10A** provided by the CNCF (thank you!) in t
 ## Projects updates
 
 Score projects got some updates in the last few months, since last KubeCon EU 2025:
-- The [`spec`](https://github.com/score-spec/spec/releases) got a new update: `files` and `volumes` as `maps` instead of `arrays`.
+- [Last July, Score just turned 1 as CNCF Sandbox project!](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/)
+- [`spec`](https://github.com/score-spec/spec/releases) got a new update: `files` and `volumes` as `maps` instead of `arrays`.
 - [`score-compose`](https://github.com/score-spec/score-compose/releases), in addition to some bugs fixed and the integration of the new `spec` version, got the new `score-compose provisioners list` supporting `cmd` provisioners and got a new `postgres-instance` provisioner in the [default provisioners]().
-- [`score-k8s`](https://github.com/score-spec/score-k8s/releases), in addition to some bugs fixed and the support of `Namespace` with `score-k8s generate [--namespace] [--create-namespace]` and a new custom `substituteValue` `sprig` function that can be used in the [patch templates]().
+- [`score-k8s`](https://github.com/score-spec/score-k8s/releases), in addition to some bugs fixed and the integration of the new `spec` version, go the support of `Namespace` with `score-k8s generate [--namespace] [--create-namespace]` and a new custom `substituteValue` `sprig` function that can be used in the [patch templates]().
 - Last but not least, the [new Score Examples Hub](https://score.dev/blog/score-examples-hub-announcement/) is out in the Score docs!
 
 ![Screenshot of the Score Examples Hub Homepage](score-examples-hub-homepage.png)

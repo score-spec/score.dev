@@ -64,6 +64,11 @@ Here are some examples of what the community has been sharing recently:
 - [Stop Building Platforms Nobody Uses: Pick the Right Kubernetes Abstraction with GitOps](https://itnext.io/stop-building-platforms-nobody-uses-pick-the-right-kubernetes-abstraction-with-gitops-64681357690f)
 - [From CI to Kubernetes Catalog: Building a Composable Platform with GitOps and vCluster](https://itnext.io/from-ci-to-kubernetes-catalog-building-a-composable-platform-with-gitops-and-vcluster-7e1decaa81da)
 
+Three experimental Score implementations driven by the community (let's see where it will go!):
+- Score Operator: https://github.com/cappyzawa/score-orchestrator
+- `score-aca`: https://github.com/score-spec/score-aca
+- `score-cloudrun` _high level discussions for now, nothing concrete yet._
+
 Interested in knowing more or even contributing to Score? [Visit our community page](https://docs.score.dev/docs/community/) to connect with Score users. contributors and maintainers there!
 
 Can't wait to attend KubeCon Atlanta and see where this edition will bring the Score project!

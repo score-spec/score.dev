@@ -16,7 +16,7 @@ Here are three opportunities to hear more about Score and meet with maintainers 
 
 [Make your Developer's Pains go Away, with the Right Level of Abstraction for your Platform](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-atlanta-na-atlanta-2025/talk/X3LUL3/).
 
-**Saturday November 8th, 2025 11:45am–12:15pm.** at [Cloud Native Rejekts](https://cloud-native.rejekts.io/)
+**Saturday November 8th, 2025 11:45am–12:15pm** at [Cloud Native Rejekts](https://cloud-native.rejekts.io/)
 
 Developers don’t code eight hours a day. They code one — and fight with TicketOps, Infrastructure dependencies and Security blockers the rest of the time. Many platform teams build Internal Developer Platforms (IDPs) to help, but poor abstraction choices make things worse. In this talk, we’ll share a battle-tested approach to building the right level of abstraction on top of Kubernetes using Score and Kro.
 
@@ -46,7 +46,7 @@ Score projects got some updates in the last few months, since last KubeCon EU 20
 - [Last July, Score just turned 1 as CNCF Sandbox project!](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/)
 - [`spec`](https://github.com/score-spec/spec/releases) got a new update: `files` and `volumes` as `maps` instead of `arrays`.
 - [`score-compose`](https://github.com/score-spec/score-compose/releases), in addition to some bugs fixed and the integration of the new `spec` version, got the new `score-compose provisioners list` supporting `cmd` provisioners and got a new `postgres-instance` provisioner in the [default provisioners]().
-- [`score-k8s`](https://github.com/score-spec/score-k8s/releases), in addition to some bugs fixed and the integration of the new `spec` version, go the support of `Namespace` with `score-k8s generate [--namespace] [--create-namespace]` and a new custom `substituteValue` `sprig` function that can be used in the [patch templates]().
+- [`score-k8s`](https://github.com/score-spec/score-k8s/releases), in addition to some bugs fixed and the integration of the new `spec` version, go the support of `Namespace` with `score-k8s generate [--namespace] [--create-namespace]` and a new custom `substituteValue` `sprig` function that can be used in the [patch templates](https://docs.score.dev/docs/score-implementation/score-k8s/patch-templates/).
 - Last but not least, the [new Score Examples Hub](https://score.dev/blog/score-examples-hub-announcement/) is out in the Score docs!
 
 ![Screenshot of the Score Examples Hub Homepage](score-examples-hub-homepage.png)
@@ -55,6 +55,7 @@ Score projects got some updates in the last few months, since last KubeCon EU 20
 
 Here are some examples of what the community has been sharing recently:
 
+- [Score + Docker Compose to deploy your local LLM models](https://medium.com/@mabenoit/score-docker-compose-to-deploy-your-local-llm-models-10aff89686ce)
 - [Unifying the Inner & Outer Loops to Bridge the Gaps between Devs & Ops with Containers + Microcks + Score](https://itnext.io/unifying-inner-outer-loops-to-bridge-the-gaps-between-devs-ops-with-containers-microcks-d28603342f4b)
 - [Generate your Backstage software catalog files with Score](https://medium.com/@mabenoit/generate-your-backstage-software-catalog-files-with-score-b62aa33e8ecc)
 - [LF Live Webinar: From CI to Kubernetes Catalog: A Practical Guide to vCluster and GitOps](https://youtu.be/U4AgmEo3oV8)
@@ -65,8 +66,8 @@ Here are some examples of what the community has been sharing recently:
 - [From CI to Kubernetes Catalog: Building a Composable Platform with GitOps and vCluster](https://itnext.io/from-ci-to-kubernetes-catalog-building-a-composable-platform-with-gitops-and-vcluster-7e1decaa81da)
 
 Three experimental Score implementations driven by the community (let's see where it will go!):
-- Score Operator: https://github.com/cappyzawa/score-orchestrator
-- `score-aca`: https://github.com/score-spec/score-aca
+- Score Operator: [cappyzawa/score-orchestrator](https://github.com/cappyzawa/score-orchestrator)
+- `score-aca`: [score-spec/score-aca](https://github.com/score-spec/score-aca)
 - `score-cloudrun` _high level discussions for now, nothing concrete yet._
 
 Interested in knowing more or even contributing to Score? [Visit our community page](https://docs.score.dev/docs/community/) to connect with Score users. contributors and maintainers there!
@@ -74,3 +75,4 @@ Interested in knowing more or even contributing to Score? [Visit our community p
 Can't wait to attend KubeCon Atlanta and see where this edition will bring the Score project!
 
 See you there!?
+

@@ -1,4 +1,4 @@
 ---
 title: Blog
-featured_post: score-at-kubecon-na-2025-in-atlanta
+featured_post: score-at-kubecon-eu-2026-in-amsterdam
 ---

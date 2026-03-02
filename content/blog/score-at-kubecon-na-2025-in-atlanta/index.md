@@ -70,7 +70,7 @@ Three experimental Score implementations driven by the community (let's see wher
 - `score-aca`: [score-spec/score-aca](https://github.com/score-spec/score-aca)
 - `score-cloudrun` _high level discussions for now, nothing concrete yet._
 
-Interested in knowing more or even contributing to Score? [Visit our community page](https://docs.score.dev/docs/community/) to connect with Score users. contributors and maintainers there!
+Interested in knowing more or even contributing to Score? [Visit our community page](https://docs.score.dev/docs/community/) to connect with Score users, contributors and maintainers there!
 
 Can't wait to attend KubeCon Atlanta and see where this edition will bring the Score project!
 

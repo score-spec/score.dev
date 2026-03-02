@@ -3,10 +3,10 @@ title: Score at KubeCon EU 2026 in Amsterdam
 date: 2026-03-01T00:00:00-00:00
 draft: false
 description: Join us at KubeCon EU 2026 in Amsterdam!
-image: score-at-kubecon-eu-2026-in-amsterdam.jpg
+image: score-at-kubecon-eu-2026-in-amsterdam.png
 author: mathieu-benoit
 ---
-After [KubeCon NA in Salt Lake City in 2024](https://score.dev/blog/score-at-kubecon-na-in-slc/), [KubeCon EU in London in 2025](https://score.dev/blog/kubecon-london-2025-trip-report/) and most recently [KubeCon NA in Atlanta in 2025](https://score.dev/blog/kubecon-london-2025-trip-report/), Score will be very well represented in Amsterdam for its fourth KubeCon as CNCF Sandbox project.
+After three KubeCons: [in Salt Lake City in 2024](https://score.dev/blog/score-at-kubecon-na-in-slc/), [in London in 2025](https://score.dev/blog/kubecon-london-2025-trip-report/) and most recently [in Atlanta in 2025](https://score.dev/blog/kubecon-london-2025-trip-report/), Score will be very well represented in Amsterdam for its fourth KubeCon as CNCF Sandbox project.
 
 This year's updates and community achievements mark another exciting milestone, and we're eager to connect with the cloud-native community to showcase how Score is evolving.
 

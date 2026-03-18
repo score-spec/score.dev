@@ -101,7 +101,7 @@ In the associated PR [here](https://github.com/score-spec/sample-score-app/pull/
 
 _Note: Proud moment, we were able to do a quick walkthrough about our DHI integration during the webinar organized by the CNCF on January 23rd, 2026 associated to [this DHI announcement for the CNCF projects](https://contribute.cncf.io/blog/2026/01/21/docker-hardened-images-for-cncf-projects)._
 
-## `docker/github-builder`
+## docker/github-builder
 
 Not directly related to the DSOS Program, but we took the opportunity to use the new [`docker/github-builder` GitHub reusable workflow](https://docs.docker.com/build/ci/github-actions/github-builder/) to release our container images.
 

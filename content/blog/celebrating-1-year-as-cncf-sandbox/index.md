@@ -9,7 +9,7 @@ author: mathieu-benoit
 
 🎉 Today, Score celebrates its first anniversary as [CNCF Sandbox](https://score.dev/blog/score-joins-the-cncf-as-a-sandbox-project/), time flies! 🎉
 
-Wow! What a ride, nothing but fun, gratitude and great learnings! 
+Wow! What a ride, nothing but fun, gratitude and great learnings!
 
 One of our key learning is that an open source project without its contributors and its community cannot go that far.
 

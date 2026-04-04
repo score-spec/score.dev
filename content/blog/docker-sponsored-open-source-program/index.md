@@ -103,7 +103,7 @@ _Note: Proud moment, we were able to do a quick walkthrough about our DHI integr
 
 ## docker/github-builder
 
-Not directly related to the DSOS Program, but we took the opportunity to use the new [`docker/github-builder` GitHub reusable workflow](https://docs.docker.com/build/ci/github-actions/github-builder/) to release our container images.
+Not directly related to the DSOS Program, but we took the opportunity to use the new [`docker/github-builder` GitHub reusable workflow](https://docs.docker.com/build/ci/github-actions/github-builder/architecture/) to release our container images.
 
 > This model gives you a build pipeline that is maintained in the Docker organization, uses a pinned BuildKit environment, distributes multi-platform builds across runners when that helps, and emits signed SLSA provenance that records both the source commit and the builder identity.
 > That tradeoff is intentional. You keep control of when the build runs and which inputs it uses, but the build implementation itself lives in the Docker-maintained workflow rather than in per-repository job steps.
@@ -202,7 +202,7 @@ cosign verify \
 
 ## That's a wrap!
 
-Being part of the Docker Sponsored Open Source (DSOS) Program has been so rewarding and has helped adopt a security by default foundation for the Score project. Using Docker Scout, Docker Hardened Images and the `docker/github-builder` has reinforced the security posture of our container images as well as demonstrated broader benefits for the Score projects and repositories.
+Being part of the Docker Sponsored Open Source (DSOS) Program has been so rewarding and has helped adopt a security by default foundation for the Score project. Using [Docker Scout](https://docs.docker.com/scout/), [Docker Hardened Images](https://docs.docker.com/dhi/) and the `docker/github-builder` has reinforced the security posture of our container images as well as demonstrated broader benefits for the Score projects and repositories.
 
 If you maintain a CNCF project or any open source project, we highly encourage you to explore the Docker Sponsored Open Source (DSOS) Program. The security improvements we achieved were significant, and the process was straightforward.
 

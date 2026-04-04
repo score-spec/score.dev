@@ -10,7 +10,7 @@ After three KubeCons: [in Salt Lake City in 2024](https://score.dev/blog/score-a
 
 This year's updates and community achievements mark another exciting milestone, and we're eager to connect with the cloud-native community to showcase how Score is evolving.
 
-Here are three opportunities to hear more about Score and meet with its maintainers at this year's KubeCon EU in Amsterdam in March 2026.
+Here are four opportunities to hear more about Score and meet with its maintainers at this year's KubeCon EU in Amsterdam in March 2026.
 
 ## Opportunity #1 - Maintainer Summit
 
@@ -38,6 +38,14 @@ A great collaboration with [Yacine](https://www.linkedin.com/in/yacinekheddache/
 
 Score will have a dedicated **Kiosk P-3A** provided by the CNCF (thank you!) in the [Project Pavilion](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/features-add-ons/project-engagement/#project-pavilion) on Thursday between 10am and 2pm. Please visit this Kiosk to meet with Score Maintainers. We will answer all your questions and will show live demos.
 
+## Opportunity #4 - TAG DevEx updates
+
+Score is very aligned with the mission and activities of the [TAG Developer Experience (DevEx)](https://contribute.cncf.io/community/tags/developer-experience/).
+
+> TAG Developer Experience focuses on improving the developer experience in cloud native environments, covering databases, microservices, streaming, messaging, API management, and developer frameworks.
+
+Learn more about the latest updates of this TAG and its activities during this session: [The Next Chapter of Developer Experience: TAG DevEx in Action - Julien Semaan, Kubex; Graziano Casto, Akamas; Mona Borham, swengin.io; Kevin Dubois, IBM; Daniel Oh, IBM](https://kccnceu2026.sched.com/event/2EF5e/the-next-chapter-of-developer-experience-tag-devex-in-action-julien-semaan-kubex-graziano-casto-akamas-mona-borham-swenginio-kevin-dubois-ibm-daniel-oh-ibm).
+
 ## Project updates
 
 The Score project got some updates in the last few months. Here are the most notable ones since last KubeCon NA 2025:
@@ -45,7 +53,13 @@ The Score project got some updates in the last few months. Here are the most not
 - [`score-k8s`](https://docs.score.dev/docs/score-implementation/score-k8s/), since its version [`0.8.2`](https://github.com/score-spec/score-k8s/releases/tag/0.8.2) allows the access of the workload's `metadata` in the [`score-k8s`'s provisioners](https://docs.score.dev/docs/score-implementation/score-k8s/resources-provisioners/). Thanks [Jared, for your contribution](https://github.com/score-spec/score-k8s/pull/232)!
 - [`score-radius`](https://github.com/score-spec/score-radius) went out as a new experimental Score implementation (we want your feedback!). We got the opportunity to do a [live demo during the Radius Community Meeting on December 9th 2025](https://youtu.be/XJorwBWmWCI?list=PLrZ6kld_pvgwYMLI-j_f0Dq2Dgv5MlK8R&t=1753). You can see it in actions also here in this blog post: [CNCF Sandbox projects: Score & Radius, a better together story, from a Workload spec to Kubernetes](https://itnext.io/cncf-sandbox-projects-score-radius-a-better-together-story-from-a-workload-spec-to-kubernetes-73a5708728c6).
 - We are also now taking advantage of the [Docker's Sponsored Open Source Program from the CNCF-Docker partnership](https://score.dev/blog/docker-sponsored-open-source-program/). We are now using Docker Scout, Docker Hardened Images and the new `docker/github-builder` improving the Security Posture of the Score projects.
+
+## Community updates
+
+We are very grateful for all the interactions and contributions with and by the Score community, here are some updates that we want to highlight:
+- One of the contributors highlighted above also shared their experience and described their setup as a Score end user, so great to hear and see! Learn more about this story here: [How Engine Built a Self-Service Kubernetes Platform with Score](https://score.dev/blog/engine-self-service-kubernetes-platform-with-score/).
 - Score @ KubeCon India 2026: [Abhinav Sharma](https://www.linkedin.com/in/abhinavsharma0/) & [Mumshad Mannambeth](https://www.linkedin.com/in/mmumshad/) from KodeKloud got their talk [The Death of the YAML-Engineer: Engineering "Invisible" Platforms With Crossplane and Score](https://sched.co/2IW4r) accepted.
+- We are starting a conversation and a collaboration with an other CNCF Sandbox project: [OpenChoreo](https://www.cncf.io/projects/openchoreo/). It's a [new experimental Score implementation](https://github.com/mathieu-benoit/score-openchoreo), stay tuned!
 
 Interested in knowing more about Score or even contributing to Score? [Visit our community page](https://docs.score.dev/docs/community/) to connect with Score users, contributors and maintainers there!
 

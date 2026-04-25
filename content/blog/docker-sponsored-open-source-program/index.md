@@ -26,11 +26,11 @@ The program grants the following perks to eligible projects:
 
 ## Docker Hub
 
-**Before:** Score is publishing four containers: four for the CLIs of [`score-compose`](https://github.com/score-spec/score-compose), [`score-k8s`](https://github.com/score-spec/score-k8s), [`score-helm`](https://github.com/score-spec/score-helm) and [`score-radius`](https://github.com/score-spec/score-radius); and the [`sample-score-app`](https://github.com/score-spec/sample-score-app) for demos and testing. We used to publish them in GitHub Container Registry [here](https://github.com/orgs/score-spec/packages).
+**Before:** Score is publishing five containers: four for the CLIs of [`score-compose`](https://github.com/score-spec/score-compose), [`score-k8s`](https://github.com/score-spec/score-k8s), [`score-helm`](https://github.com/score-spec/score-helm) and [`score-radius`](https://github.com/score-spec/score-radius); and the [`sample-score-app`](https://github.com/score-spec/sample-score-app) for demos and testing. We used to publish them in GitHub Container Registry [here](https://github.com/orgs/score-spec/packages).
 
 **After:** Being part of the DSOS Program gives use the opportunity to publish them in Docker Hub, and gain more visibility and trust from the community.
 
-You can now find our four container images [in Docker Hub here](https://hub.docker.com/u/scorespec).
+You can now find our five container images [in Docker Hub here](https://hub.docker.com/u/scorespec).
 
 ![](docker-hub.jpg)
 

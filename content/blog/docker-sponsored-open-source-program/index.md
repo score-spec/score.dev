@@ -26,7 +26,7 @@ The program grants the following perks to eligible projects:
 
 ## Docker Hub
 
-**Before:** Score is publishing four containers: three for the CLIs of [`score-compose`](https://github.com/score-spec/score-compose), [`score-k8s`](https://github.com/score-spec/score-k8s) and [`score-radius`](https://github.com/score-spec/score-radius); and the [`sample-score-app`](https://github.com/score-spec/sample-score-app) for demos and testing. We used to publish them in GitHub Container Registry [here](https://github.com/orgs/score-spec/packages).
+**Before:** Score is publishing four containers: four for the CLIs of [`score-compose`](https://github.com/score-spec/score-compose), [`score-k8s`](https://github.com/score-spec/score-k8s), [`score-helm`](https://github.com/score-spec/score-helm) and [`score-radius`](https://github.com/score-spec/score-radius); and the [`sample-score-app`](https://github.com/score-spec/sample-score-app) for demos and testing. We used to publish them in GitHub Container Registry [here](https://github.com/orgs/score-spec/packages).
 
 **After:** Being part of the DSOS Program gives use the opportunity to publish them in Docker Hub, and gain more visibility and trust from the community.
 
@@ -87,7 +87,7 @@ For example for the `score-radius` CLI (using [dhi.io/golang](https://dhi.io/cat
 
 ![](score-radius-dhi-diff.jpg)
 
-In the associated PR [here](https://github.com/score-spec/score-radius/pull/28), we can see that 22 packages were removed (package manager and shell included) and that 2 CVEs were removed:
+In the associated PR [here](https://github.com/score-spec/sample-score-app/pull/58), we can see that 0.3MB was saved for the size while keeping the same number of packages and still having 0 CVEs. We could have stayed with `debian` but we decided to move to an `alpine` base image (DHI provides the [two options](https://docs.docker.com/dhi/core-concepts/glibc-musl/)):
 
 ![](score-radius-dhi-scout-compare.jpg)
 
@@ -95,7 +95,7 @@ Another example with the `sample-score-app` (using [dhi.io/node](https://dhi.io/
 
 ![](score-sample-app-dhi-diff.jpg)
 
-In the associated PR [here](https://github.com/score-spec/sample-score-app/pull/58), we can see that 0.3MB was saved for the size while keeping the same number of packages and still having 0 CVEs. We could have stayed with `debian` but we decided to move to an `alpine` base image (DHI provides the [two options](https://docs.docker.com/dhi/core-concepts/glibc-musl/)):
+In the associated PR [here](https://github.com/score-spec/score-radius/pull/28), we can see that 22 packages were removed (package manager and shell included) and that 2 CVEs were removed:
 
 ![](score-sample-app-dhi-scout-compare.jpg)
 

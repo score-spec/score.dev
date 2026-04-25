@@ -192,12 +192,18 @@ This workflow provides a trusted BuildKit instance and generates signed SLSA-com
 We still get our container images signed by `cosign`. Anyone can verify the trusted signature like this:
 
 {{< highlight shell >}}
+TAG=latest
+PLATFORM=amd64
+SIGNED_DIGEST=$(crane manifest scorespec/score-compose:$TAG \
+    | jq -r --arg platformdigest \
+    "$(crane digest --platform linux/$PLATFORM scorespec/score-compose:$TAG)" \
+    '.manifests[] | select(.annotations["vnd.docker.reference.digest"] == $platformdigest) | .digest')
 cosign verify \
     --experimental-oci11 \
     --new-bundle-format \
     --certificate-oidc-issuer https://token.actions.githubusercontent.com \
     --certificate-identity-regexp ^https://github.com/docker/github-builder/.github/workflows/build.yml.*$ \
-    ghcr.io/score-spec/score-compose@sha256:8dc5be472c7b71d55284451fd37d95710b10b742a6d06b79a34d70131eaaa4b4
+    scorespec/score-compose@$SIGNED_DIGEST
 {{</ highlight >}}
 
 ## That's a wrap!

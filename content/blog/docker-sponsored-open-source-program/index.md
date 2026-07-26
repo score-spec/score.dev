@@ -101,7 +101,7 @@ In the associated PR [here](https://github.com/score-spec/score-radius/pull/28),
 
 _Note: Proud moment, we were able to do a quick walkthrough about our DHI integration during the webinar organized by the CNCF on January 23rd, 2026 associated to [this DHI announcement for the CNCF projects](https://contribute.cncf.io/blog/2026/01/21/docker-hardened-images-for-cncf-projects)._
 
-## docker/github-builder
+## Docker GitHub Builder
 
 Not directly related to the DSOS Program, but we took the opportunity to use the new [`docker/github-builder` GitHub reusable workflow](https://docs.docker.com/build/ci/github-actions/github-builder/architecture/) to release our container images.
 
@@ -120,13 +120,13 @@ Not directly related to the DSOS Program, but we took the opportunity to use the
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Login to Docker Hub (docker.io)
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           registry: docker.io
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          username: ${{ vars.DOCKER_HUB_ORG }}
           password: ${{ secrets.DOCKER_HUB_RELEASE_TOKEN }}
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -178,13 +178,16 @@ Not directly related to the DSOS Program, but we took the opportunity to use the
       meta-tags: |
         type=ref,event=tag
         latest
+      registry-identities: |
+        - type: dockerhub
+          registry: docker.io
+          username: ${{ vars.DOCKER_HUB_ORG }}
+          connection_id: ${{ vars.DOCKER_HUB_OIDC_CONNECTION_ID }}
     secrets:
       registry-auths: |
         - registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-        - username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_RELEASE_TOKEN }}
 {{</ highlight >}}
 
 This workflow provides a trusted BuildKit instance and generates signed SLSA-compliant provenance attestations, guaranteeing the build happened from the source commit and all build steps ran in isolated sandboxed environments from immutable sources. This enables GitHub projects to follow a seamless path toward higher levels of security and trust.
@@ -206,9 +209,71 @@ cosign verify \
     scorespec/score-compose@$SIGNED_DIGEST
 {{</ highlight >}}
 
+## OIDC connections
+
+Last but not least with an update on July 21st 2026, Docker released a new OIDC connections feature allowing pulls and pushes with Docker Hub to use a short-lived token instead of a long-lived OAT token.
+
+> OIDC connections create a trust relationship between Docker and a trusted third party so you don't have to maintain long-lived credentials. When you create an OIDC connection, Docker exchanges short-lived tokens with another vendor that can grant fine-grained access to your Docker resources.
+
+**Before:** we were doing:
+
+With `docker/login-action`:
+
+{{< highlight yaml >}}
+    steps:
+      - uses: docker/login-action@v4
+        with:
+          username: ${{ vars.DOCKER_HUB_ORG }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+{{</ highlight >}}
+
+Or with `docker/github-builder`:
+
+{{< highlight yaml >}}
+    uses: docker/github-builder/.github/workflows/build.yml@v1
+    with:
+      ...
+    secrets:
+      registry-auths: |
+        - username: ${{ vars.DOCKER_HUB_ORG }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+{{</ highlight >}}
+
+**After:** that's what we are doing now:
+
+With `docker/login-action`:
+
+{{< highlight yaml >}}
+    permissions:
+      id-token: write
+    steps:
+      - uses: docker/login-action@v4 # v4.5.0+
+        env:
+          DOCKERHUB_OIDC_CONNECTIONID: ${{ vars.DOCKER_HUB_OIDC_CONNECTION_ID }}
+        with:
+          username: ${{ vars.DOCKER_HUB_ORG }}
+{{</ highlight >}}
+
+Or with `docker/github-builder`:
+
+{{< highlight yaml >}}
+    uses: docker/github-builder/.github/workflows/build.yml@v1 # v1.15.0+
+    permissions:
+      id-token: write
+    with:
+      ...
+      registry-identities: |
+        - type: dockerhub
+          registry: docker.io
+          username: ${{ vars.DOCKER_HUB_ORG }}
+          connection_id: ${{ vars.DOCKER_HUB_OIDC_CONNECTION_ID }}
+{{</ highlight >}}
+
+We just improved our security posture by using this short-lived token, instead of dealing with static long-lived token that potentially could be stolen.
+
 ## That's a wrap!
 
-Being part of the Docker Sponsored Open Source (DSOS) Program has been so rewarding and has helped adopt a security by default foundation for the Score project. Using [Docker Scout](https://docs.docker.com/scout/), [Docker Hardened Images](https://docs.docker.com/dhi/) and the `docker/github-builder` has reinforced the security posture of our container images as well as demonstrated broader benefits for the Score projects and repositories.
+Being part of the Docker Sponsored Open Source (DSOS) Program has been so rewarding and has helped adopt a security by default foundation for the Score project. Using [Docker Scout](https://docs.docker.com/scout/), [Docker Hardened Images](https://docs.docker.com/dhi/), [OIDC connections](https://docs.docker.com/enterprise/security/oidc-connections/), and the [Docker GitHub Builder](https://docs.docker.com/build/ci/github-actions/github-builder/) has reinforced the security posture of our container images as well as demonstrated broader benefits for the Score projects and repositories.
 
 If you maintain a CNCF project or any open source project, we highly encourage you to explore the Docker Sponsored Open Source (DSOS) Program. The security improvements we achieved were significant, and the process was straightforward.
 

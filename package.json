@@ -28,7 +28,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "auto-changelog": "^2.6",
+    "auto-changelog": "^2.7",
     "concurrently": "^10.0.5",
     "exec-bin": "^1.0.0",
     "hugo-installer": ">=4.0.1",

@@ -23,6 +23,8 @@ docker compose -f oci://scorespec/score-labspace:latest up
 
 Then open [http://localhost:3030](http://localhost:3030) and follow the instructions in your browser.
 
+![](instructions-vscode-side-by-side.png)
+
 ## What will you learn?
 
 The lab is split into seven short modules, each building on the previous one:

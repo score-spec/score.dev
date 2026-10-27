@@ -17,9 +17,9 @@ No need to install `score-compose`, `score-k8s`, `kubectl` or `kind` on your mac
 
 ## Run it in one command
 
-```bash
+{{< highlight shell >}}
 docker compose -f oci://scorespec/score-labspace:latest up
-```
+{{</ highlight >}}
 
 Then open [http://localhost:3030](http://localhost:3030) and follow the instructions in your browser.
 
@@ -39,7 +39,7 @@ The lab is split into seven short modules, each building on the previous one:
 
 The heart of the lab is the "aha" moment: you write a single, platform-agnostic Score file...
 
-```yaml
+{{< highlight yaml >}}
 apiVersion: score.dev/v1b1
 metadata:
   name: hello-world
@@ -72,11 +72,11 @@ service:
     www:
       port: 8080
       targetPort: 3000
-```
+{{</ highlight >}}
 
 ...and then deploy it twice, without changing a single line:
 
-```bash
+{{< highlight shell >}}
 # With Docker Compose
 score-compose init
 score-compose generate score.yaml --image scorespec/sample-score-app:latest
@@ -86,7 +86,7 @@ docker compose up -d
 score-k8s init
 score-k8s generate score.yaml --image scorespec/sample-score-app:latest
 kubectl apply -f manifests.yaml
-```
+{{</ highlight >}}
 
 ### Going further: patch templates and provisioners
 
@@ -118,8 +118,8 @@ Give the lab a try and tell us what you think! Is a scenario missing? Is a step 
 
 Want a guided tour instead? The Score Maintainers will be **demoing the Score Labspace live at our Kiosk in the Project Pavilion** at [KubeCon + CloudNativeCon North America 2026](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/) in Salt Lake City (November 9-12)!
 
-- 📍 **Where:** Project Pavilion, Hall 5 (Cosmic Canyon), Level 1, Salt Palace Convention Center, kiosk **#TBD**
-- 🕒 **When:** Pavilion hours are Tuesday 10:45 AM-7:00 PM, Wednesday 10:30 AM-5:00 PM and Thursday 10:30 AM-2:00 PM (demo times: **TBD**)
+- 📍 **Where:** **Kiosk P-17B** at the Project Pavilion, Hall 5 (Cosmic Canyon), Level 1, Salt Palace Convention Center
+- 🕒 **When:** Thursday 10:15 AM - 2:00 PM
 
 Come say hi, run the lab with us, ask your questions about Score, and tell us what you'd like to see next. You can find the kiosk in the [Project Pavilion Kiosk Directory](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/features-add-ons/project-engagement/#project-pavilion-kiosk-directory). We can't wait to meet you there!
 

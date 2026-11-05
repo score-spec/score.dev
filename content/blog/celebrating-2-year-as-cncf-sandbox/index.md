@@ -1,15 +1,15 @@
 ---
 title: "Celebrating 2 years as CNCF Sandbox"
-date: 2026-07-08T00:00:00-00:00
+date: 2026-11-04T00:00:00-00:00
 draft: false
 description: "Score turned 2 as a CNCF Sandbox project: a stronger security posture, more adoption, a new hands-on Labspace and two more KubeCons. Next stop: Salt Lake City!"
 image: celebrating-2-years-as-cncf-sandbox.jpg
 author: mathieu-benoit
 ---
 
-🎉 Score just turned 2 as a [CNCF Sandbox](https://www.cncf.io/projects/score/) project! 🎉
+🎉 Score turned 2 as a [CNCF Sandbox](https://www.cncf.io/projects/score/) project this past July! 🎉
 
-Two years ago, [Score joined the CNCF](https://score.dev/blog/score-joins-the-cncf-as-a-sandbox-project/). Last year, we [celebrated our first anniversary](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/) and the 19 new contributors who had joined us. Time still flies, and this second year was packed with great moments, with the same takeaway: Score only goes as far as its community takes it. Thank you to every contributor, user, speaker and maintainer who helped along the way. 💙
+On July, 2024, [Score joined the CNCF](https://score.dev/blog/score-joins-the-cncf-as-a-sandbox-project/) and last year, we [celebrated our first anniversary](https://score.dev/blog/celebrating-1-year-as-cncf-sandbox/). Time still flies, and this second year was packed with great moments, with the same takeaway: Score only goes as far as its community takes it. Thank you to every contributor, user, speaker and maintainer who helped along the way. 💙
 
 Our mission hasn't changed:
 
@@ -31,6 +31,57 @@ And Score keeps showing up next to other CNCF projects, which is one of the thin
 - **OpenChoreo**: a conversation, and an experimental implementation, are on the way.
 - **Docker Model Runner**: `score-compose` now natively supports it, to deploy workloads with local LLM models.
 
+## 🤝 Community spotlight: ordered container start
+
+If one feature illustrates what this community can do together, it's **ordered container start**: the new `before` property in the Score Specification.
+
+Many workloads need some setup before the main container can run: a schema migration to complete, static data to generate, a shared state to initialize. This is the well-known "init container" and "sidecar" pattern, and until now there was no platform-agnostic way to express it in a Score file. Now there is:
+
+{{< highlight yaml >}}
+apiVersion: score.dev/v1b1
+metadata:
+  name: myapp
+containers:
+  db-migrate:
+    image: migrate/migrate:v4
+    command: ["up"]
+    before:
+      main:
+        ready: complete
+  main:
+    image: myapp:latest
+{{</ highlight >}}
+
+The `db-migrate` container runs _before_ `main`, and `ready` defines when `main` can start: `started` (the default), `complete` or `healthy`. Each Score implementation then maps this to what its platform natively provides:
+
+| `ready` | `score-compose` (Docker Compose) | `score-k8s` (Kubernetes) |
+|---|---|---|
+| `started` | `depends_on` with `service_started` | sidecar `initContainers` entry (`restartPolicy: Always`) |
+| `complete` | `depends_on` with `service_completed_successfully` | regular `initContainers` entry |
+| `healthy` | `depends_on` with `service_healthy` (with a warning if no probe is defined) | rejected with a validation error, since init containers can't be gated on health |
+
+Both implementations also validate the workload at generation time, to catch containers referencing themselves, unknown containers and cyclic dependencies.
+
+What makes this feature special is that **it took the whole community to ship it**:
+
+- [**Chris**](https://github.com/chris-stephenson), one of the Score Maintainers, [proposed the idea](https://github.com/score-spec/spec/issues/104) back in September 2024. He also reviewed the pull requests, including the feedback that led to a simpler design.
+- [**kai-kystverket**](https://github.com/kai-kystverket) took the idea and implemented it in the Score Specification: [spec#136](https://github.com/score-spec/spec/pull/136).
+- [**Mathieu**](https://github.com/mathieu-benoit) laid the foundation in the shared Go library with [score-go#121](https://github.com/score-spec/score-go/pull/121), so that the implementations could start building on it before the Specification was even released.
+- [**Abhishek**](https://github.com/Abhishek9639) did the heavy lifting afterwards: he [refactored the `before` field from an array to a per-container mapping](https://github.com/score-spec/spec/pull/186) (and fixed the schema validation that wasn't kicking in), integrated it in [score-go#178](https://github.com/score-spec/score-go/pull/178), and then implemented the feature in both [`score-compose`](https://github.com/score-spec/score-compose/pull/454) and [`score-k8s`](https://github.com/score-spec/score-k8s/pull/294).
+- [**Matthieu**](https://github.com/lekaf974) spotted that the generated types in `score-go` were broken and fixed the `ContainerBefore` structure and the `ready` conditions with [score-go#222](https://github.com/score-spec/score-go/pull/222).
+
+Five contributors, four Score repositories and about two years from the initial idea to the implementation in both Docker Compose and Kubernetes: that's open source at its best.
+
+### And it goes beyond Score
+
+The story doesn't stop there. In mid-2026, Docker Compose [shipped native init containers](https://github.com/docker/compose/pull/13862) with the new `pre_start` service lifecycle hook (Docker Compose v5.3.0). Until then, `score-compose` was emulating init containers with dedicated Compose services and `depends_on`. Abhishek opened [a feature request](https://github.com/score-spec/score-compose/issues/522) to leverage this native primitive, with a detailed analysis of which Score init containers could be converted, and which ones couldn't, and why.
+
+That's where it gets interesting: the conversation happened openly with [Guillaume Lours](https://github.com/glours), Docker Compose maintainer. Two of the limitations identified by the Score contributors were already lifted on the Compose side, and the others were clarified: some are even by design. Support for the full container specification in hooks then followed in `compose-go` v2.16, which `score-compose` has since adopted.
+
+This is a great illustration of how Score contributors interact with and influence the OSS projects Score builds on. The work is still in progress (the design of how users opt in to the native output is still being discussed), and everyone is welcome to join the conversation in [score-compose#522](https://github.com/score-spec/score-compose/issues/522).
+
+Huge kudos to all of you! 🙌
+
 ## 🔒 A stronger security posture
 
 As a CNCF project, we want to demonstrate security best practices by default. Thanks to the [CNCF and Docker partnership](https://www.cncf.io/announcements/2025/09/18/cncf-expands-infrastructure-support-for-project-maintainers-through-partnership-with-docker/), Score was onboarded into the [Docker-Sponsored Open Source Program](https://score.dev/blog/docker-sponsored-open-source-program/), and the results speak for themselves:
@@ -44,7 +95,7 @@ The full journey, with before/after snippets you can reuse in your own projects,
 
 ## 🧪 Learn Score hands-on with the Labspace
 
-"I get the idea behind Score, but I'd like to try it before setting everything up." We heard that feedback many times, so we released the [**Score Labspace**](https://score.dev/blog/score-labspace/) just a few days ago: a guided lab where the instructions and a ready-to-use terminal live side by side, with all the tools already installed. All you need is Docker:
+"I get the idea behind Score, but I'd like to try it before setting everything up." We heard that feedback many times, so we recently released the [**Score Labspace**](https://score.dev/blog/score-labspace/): a guided lab where the instructions and a ready-to-use terminal live side by side, with all the tools already installed. All you need is Docker:
 
 {{< highlight shell >}}
 docker compose -f oci://scorespec/score-labspace:latest up

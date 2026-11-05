@@ -74,11 +74,7 @@ Five contributors, four Score repositories and about two years from the initial 
 
 ### And it goes beyond Score
 
-The story doesn't stop there. In mid-2026, Docker Compose [shipped native init containers](https://github.com/docker/compose/pull/13862) with the new `pre_start` service lifecycle hook (Docker Compose v5.3.0). Until then, `score-compose` was emulating init containers with dedicated Compose services and `depends_on`. Abhishek opened [a feature request](https://github.com/score-spec/score-compose/issues/522) to leverage this native primitive, with a detailed analysis of which Score init containers could be converted, and which ones couldn't, and why.
-
-That's where it gets interesting: the conversation happened openly with [Guillaume Lours](https://github.com/glours), Docker Compose maintainer. Two of the limitations identified by the Score contributors were already lifted on the Compose side, and the others were clarified: some are even by design. Support for the full container specification in hooks then followed in `compose-go` v2.16, which `score-compose` has since adopted.
-
-This is a great illustration of how Score contributors interact with and influence the OSS projects Score builds on. The work is still in progress (the design of how users opt in to the native output is still being discussed), and everyone is welcome to join the conversation in [score-compose#522](https://github.com/score-spec/score-compose/issues/522).
+The story doesn't stop there. When Docker Compose [shipped native init containers](https://github.com/docker/compose/pull/13862) with `pre_start`, [**Abhishek**](https://github.com/Abhishek9639) opened [a feature request](https://github.com/score-spec/score-compose/issues/522) for `score-compose` to leverage it, with a detailed analysis of which Score init containers could be converted. The feedback shared with Docker Compose maintainer [Guillaume Lours](https://github.com/glours) directly influenced the Compose implementation itself: the limitations Score contributors identified, such as hooks not being able to set their own `command` or volumes, were addressed on the Compose side, with hooks now supporting the full container specification. A great example of Score contributors not only building on top of OSS projects, but also helping shape them. The work is still in progress, and you're welcome to join the conversation!
 
 Huge kudos to all of you! 🙌
 

@@ -1,4 +1,4 @@
 ---
 title: Blog
-featured_post: score-labspace
+featured_post: celebrating-2-year-as-cncf-sandbox
 ---

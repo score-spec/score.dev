@@ -3,7 +3,7 @@ title: "Celebrating 2 years as CNCF Sandbox"
 date: 2026-11-04T00:00:00-00:00
 draft: false
 description: "Score turned 2 as a CNCF Sandbox project: a stronger security posture, more adoption, a new hands-on Labspace and two more KubeCons. Next stop: Salt Lake City!"
-image: celebrating-2-years-as-cncf-sandbox.jpg
+image: celebrating-2-year-as-cncf-sandbox.jpg
 author: mathieu-benoit
 ---
 
@@ -52,15 +52,7 @@ containers:
     image: myapp:latest
 {{</ highlight >}}
 
-The `db-migrate` container runs _before_ `main`, and `ready` defines when `main` can start: `started` (the default), `complete` or `healthy`. Each Score implementation then maps this to what its platform natively provides:
-
-| `ready` | `score-compose` (Docker Compose) | `score-k8s` (Kubernetes) |
-|---|---|---|
-| `started` | `depends_on` with `service_started` | sidecar `initContainers` entry (`restartPolicy: Always`) |
-| `complete` | `depends_on` with `service_completed_successfully` | regular `initContainers` entry |
-| `healthy` | `depends_on` with `service_healthy` (with a warning if no probe is defined) | rejected with a validation error, since init containers can't be gated on health |
-
-Both implementations also validate the workload at generation time, to catch containers referencing themselves, unknown containers and cyclic dependencies.
+The `db-migrate` container runs _before_ `main`, and `ready` defines when `main` can start: `started` (the default), `complete` or `healthy`. Each Score implementation then maps this to what its platform natively provides and validates the workload at generation time, to catch containers referencing themselves, unknown containers and cyclic dependencies.
 
 What makes this feature special is that **it took the whole community to ship it**:
 

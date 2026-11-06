@@ -78,6 +78,10 @@ The story doesn't stop there. When Docker Compose [shipped native init container
 
 Huge kudos to all of you! 🙌
 
+## 🔮 The path to V1
+
+As we hit 2 years as a Sandbox project, it's really about time we got to `v1` of the spec (yes, we're still on `v1b1`!)  [**Chris**](https://github.com/chris-stephenson) has been gathering requirements since the start of the year for our discussion of what a `v1` of the spec would look like. You can still contribute your ideas in the community Doc [here](https://docs.google.com/document/d/19qkncxA2pduyAwgjfAl-lQs4hEhjhAm0yrXxy-5u8dg/edit). The biggest thing is to make Score compatible with the Kubernetes Custom Resource schema, opening up interesting use-cases of "Score Operators". We also heard the feedback from the community that out "implementation" approach is not very reusable, so we're rebuilding the score-go library to allow for better code-reuse and importing your favourite score implementations as packages in Go!
+
 ## 🔒 A stronger security posture
 
 As a CNCF project, we want to demonstrate security best practices by default. Thanks to the [CNCF and Docker partnership](https://www.cncf.io/announcements/2025/09/18/cncf-expands-infrastructure-support-for-project-maintainers-through-partnership-with-docker/), Score was onboarded into the [Docker-Sponsored Open Source Program](https://score.dev/blog/docker-sponsored-open-source-program/), and the results speak for themselves:
